@@ -1,0 +1,90 @@
+//blog page css//
+
+.blog-page{
+
+  .blog-image{
+    height: 242px;
+    overflow: hidden;
+  }
+  .widget-sidebar{
+    h2{
+      padding: 40px 0 0px;
+      position: relative;
+      font-size: 24px;
+      margin-bottom: 20px;
+      &:after{
+        position: absolute;
+        content: '';
+        left: 0;
+        bottom:0;
+        width: 100px;
+        height: 2px;
+        background: $dred;
+      }
+    }
+    .recent-post {
+      width: 100%;
+      height: 80px;
+      list-style-type: none; display: flex;
+      .line-clamp2{
+        padding-left:5px ;
+      }
+    }
+    .post-img img {
+      width: 100px;
+      height: 70px;
+
+      margin-right: 15px;
+      transition: 0.5s;
+    }
+    .sidebar-tag{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      li {
+        margin-bottom:10px;
+        a{
+          border:1px solid #ccc;
+          padding:5px 10px;
+          margin-right:10px;
+          &:hover{
+            color: $dred;
+          }
+
+        }
+      }
+    }
+
+  }
+
+}
+ //pagination css//
+#pagination{
+  .page-item.active .page-link{
+    background: $dred;
+    color: #ffffff;
+    outline: none;
+  }
+  .page-link{
+    color: $dred;
+  }
+}
+//socail-icons css
+.social_icons{
+  .heading h3{
+  }
+  ul > li > a{
+    color: inherit;
+    span:first-child{
+      padding: 10px;
+      border-radius: 50%;
+      margin-right:10px;
+    }
+    span:last-child{
+      display: none;
+      @media screen and (max-width:991px) {
+        display: none;
+      }
+    }
+  }
+}

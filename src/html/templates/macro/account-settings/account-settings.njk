@@ -1,0 +1,123 @@
+    <section class="content-box-row">
+        <div class="container " style="margin:10px auto;padding:0;">
+            {#alert section#}
+            <div class="alert__section">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="alert alert-info">
+                            <strong>Success!</strong> Indicates a successful or positive action.
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="profile__section">
+                <div class="row">
+                    <div class="col-md-3 col-sm-12">
+                        <div class="account--userInfo p-2">
+                            <a href="javascript:void(0)" class="d-block ">
+                                <span class="userInfo--name bold">Susant Shrestha</span>
+                                <small class="userInfo--email data">susantshrestha@hotmail.com</small>
+                            </a>
+                        </div>
+                        <div class="grouplist tab d-none d-sm-block">
+                            <ul class="liststyle--none">
+                                <li><a href="javascript:void(0)" class="tabslinks" onclick="accountsettings(event, 'orders')"><i class="fas fa-book fa-2x mr-10"></i>My orders</a></li>
+                                <li><a href="javascript:void(0)" class="tabslinks" onclick="accountsettings(event, 'address')"><i class="fas fa-address-card fa-2x mr-10"></i>Shipping addresses</a></li>
+                                <li><a href="javascript:void(0)" class="tabslinks" onclick="accountsettings(event, 'wishlist')"><i class="fas fa-heart fa-2x mr-10"></i>wish lists</a></li>
+                                <li ><a href="javascript:void(0)" class="tabslinks" onclick="accountsettings(event, 'account')" id="defaultOpen"><i class="fas fa-edit fa-2x mr-10"></i>account settings</a></li>
+                            </ul>
+                        </div>
+
+                        {#mobile view#}
+                        <div class="grouplist tab d-block d-sm-none">
+                            <ul class="liststyle--none">
+                                <li><a href="javascript:void(0)" class="tabslinks" onclick="accountsettings(event, 'orders')" title="orders"><i class="fas fa-book fa-2x mr-10"></i></a></li>
+                                <li><a href="javascript:void(0)" class="tabslinks" onclick="accountsettings(event, 'address')" title="address"><i class="fas fa-address-card fa-2x mr-10"></i></a></li>
+                                <li><a href="javascript:void(0)" class="tabslinks" onclick="accountsettings(event, 'wishlist')" title="wishlist"><i class="fas fa-heart fa-2x mr-10"></i></a></li>
+                                <li ><a href="javascript:void(0)" class="tabslinks" onclick="accountsettings(event, 'account')" id="defaultOpen" title="account"><i class="fas fa-edit fa-2x mr-10"></i></a></li>
+                                {#<li ><a href="javascript:void(0)" class="tabslinks" onclick="accountsettings(event, 'account')" id="defaultOpen" title="account"><i class="fas fa-edit fa-2x mr-10"></i></a></li>#}
+                                {#<li ><a href="javascript:void(0)" class="tabslinks" onclick="accountsettings(event, 'account')" id="defaultOpen" title="account"><i class="fas fa-edit fa-2x mr-10"></i></a></li>#}
+                            </ul>
+                        </div>
+
+
+                    </div>
+
+                    <div class="col-md-9 col-sm-12">
+                        {# account settings #}
+                        <div id="account" class="account-settings__container tabcontent">
+                            <div class="row">
+                                <div class="col-md-6 col-sm-12 ">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="card-title">
+                                                <strong class="titles">Account Information</strong>
+                                                <a class="pull-right link" href="javascript:void(0)" data-toggle="modal" data-target="#edit_account_info"><i class="far fa-edit"></i> Edit</a>
+                                            </div>
+                                            <div class="panel-body">
+
+                                                <ul class="liststyle--none">
+                                                    <li><span class="mr-10 bold">Name:</span><span class="userInfo--name">Susant Shrestha</span></li>
+                                                    <li><span class="mr-10 bold">Password:</span><span class="userInfo--password data">********</span></li>
+                                                    <li><a class="link" href="javascript:void(0)" data-toggle="modal" data-target="#edit_account_info">Change Password</a></li>
+                                                </ul>
+
+                                        </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-md-6 col-sm-12 ">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="card-title">
+                                                <strong class="titles">Personal Information</strong>
+                                                <a class="pull-right link" href="javascript:void(0)" data-toggle="modal" data-target="#edit_personal_info"><i class="far fa-edit"></i> Edit</a>
+
+                                            </div>
+                                            <span class="para ">
+                                                 <ul class="liststyle--none">
+                                                    <li><span class="mr-10 bold">Name:</span><span class="userInfo--name">Susant Shrestha</span></li>
+                                                    <li><span class="mr-10 bold">Username:</span><span class="userInfo--username data">user-ME3LB11</span></li>
+                                                    <li><span class="mr-10 bold">Gender:</span><span class="userInfo--gender data">Male</span></li>
+                                                    <li><span class="mr-10 bold">Date of birth:</span><span class="userInfo--dob data">0000-00-00</span></li>
+                                                </ul>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                {#<div class="col-md-6 col-sm-12 ">#}
+                                    {#<div class="card">#}
+                                        {#<div class="card-body">#}
+                                            {#<div class="card-title">#}
+                                                {#<strong class="titles">Notification Settings</strong>#}
+                                                {#<a class="pull-right link" href="javascript:void(0)" data-toggle="modal" data-target="#edit_commnotifysettings"><i class="far fa-edit"></i> Edit</a>#}
+                                            {#</div>#}
+                                            {#<div class="panel-body">#}
+
+                                            {#Manage messages, emails and notifications the way you want#}
+
+                                            {#</div>#}
+                                        {#</div>#}
+                                    {#</div>#}
+
+                                {#</div>#}
+                            </div>
+                        </div>
+
+                        {% include 'account-settings/shipping-settings.njk' %}
+                        {% include 'account-settings/wishlist-settings.njk' %}
+                        {% include 'account-settings/address-settings.njk' %}
+
+                    </div>
+                </div>
+            </div>
+    </div>
+</section>

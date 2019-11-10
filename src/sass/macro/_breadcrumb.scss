@@ -1,0 +1,53 @@
+/*
+------------------------------------------
+Breadcrumbs
+------------------------------------------
+*/
+.uk-breadcrumb{
+  padding: 10px 0;
+}
+.uk-breadcrumb > :nth-child(n+2):not(.uk-first-column)::before {
+  //content: "\f054";
+  content: "→";
+  display: inline-block;
+  margin: 0 10px;
+  font-size:10px;
+  color: #999;
+  font-family: fontAwesome;
+  font-weight: 500;
+}
+.uk-breadcrumb > * > * {
+  display: inline-block;
+  font-size: 1rem;
+  color: #999;
+  @media screen and (max-width: 425px) {
+    font-size: .75rem;
+  }
+}
+
+/*
+------------------------------------------
+pagination
+------------------------------------------
+*/
+#pagination{
+  margin:20px 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  .pagination{
+    .page-item .page-link{
+      color: #333;
+      outline: none;
+    }
+    .page-item.active .page-link{
+      color: #ffffff;
+      background: $d-pink;
+      border-color: $d-pink;
+
+    }
+
+
+  }
+
+}

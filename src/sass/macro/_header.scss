@@ -1,0 +1,84 @@
+.header {
+  position: relative;
+  z-index: 999;
+  color: #000;
+  width: 100%;
+  .top-header {
+ 
+&_right{
+  p span:first-child{
+    color: $dred;
+    padding-right:5px;
+
+  }
+  p span:last-child{
+   font-size: 14px;
+    margin-right:20px;
+
+  }
+}
+  }
+
+
+  .bottom-header {
+    @media screen and (max-width: 575px) {
+      padding: 10px 50px!important;
+    }
+
+    .logo{
+      max-width: 150px;
+      @media screen and (max-width: 575px) {
+        max-width: 100px;
+        img{
+height: 100%;
+        }
+      }
+
+    }
+    .navigation ul li {
+      position: relative;
+      a.menu{
+        color: #fff;
+        padding:10px 20px;
+        margin-left:10px;
+        position: relative;
+        transition: all .3s linear;
+        &:hover{
+           color: $dred;
+          letter-spacing: 1.3px;
+          font-size: 17px;
+          font-weight: bold;
+        }
+
+        &.active{
+          color: $dred;
+          letter-spacing: 1.3px;
+          font-size: 17px;
+          font-weight: bold;
+        }
+      }
+
+
+    }
+    .mobile-navigation{
+
+
+      position: absolute;
+      width: 100%;
+      top:50px;
+      left: 0;
+      background: $dblue;
+      li a{
+        padding: 10px 20px;
+        color: #fff;
+        display: block;}
+
+    }
+  }
+}
+.bg-gray{
+  background: #555555;
+}
+.bg-black{
+  background: #222;
+}

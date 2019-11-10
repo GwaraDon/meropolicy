@@ -1,0 +1,33 @@
+html{
+  font-size: 1rem;
+  font-family: 'PT Sans', sans-serif;
+}
+.container-fluid{
+  //padding:0;
+}
+
+.nav-tabs {
+  a {
+    @extend %capital;
+  }
+}
+
+img{
+  height:auto;
+  width:100%;
+}
+
+//slider overwrite
+.owl-theme .owl-nav {
+  margin-top: 0;
+}
+
+.uk-slideshow-items{
+  height:81vh!important;
+}
+.uk-card-default{
+  padding:0;
+}
+
+
+

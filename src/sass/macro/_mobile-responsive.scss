@@ -1,0 +1,173 @@
+//ipad pro
+@media screen and (max-width: 1024px) {
+  .slider-images {
+    height: 600px !important;
+  }
+}
+
+
+//medium size device
+@media screen and (max-width: 991px) {
+  .section-padding {
+    padding: 75px 0 35px !important;
+  }
+}
+
+//tablet view css
+@media screen and (max-width: 768px) {
+  //css for the header section
+  .slider-images {
+    height: 600px !important;
+  }
+}
+
+//end of tablet view
+
+@media screen and (max-width: 767px) {
+  #header {
+    .bottom-header {
+      .bars {
+        display: block !important;
+        color: white;
+        margin-top: -35px;
+      }
+
+      .navigation {
+        display: none;
+      }
+    }
+  }
+  #top-banner {
+    margin-top: -80px;
+    .slider-images {
+      height: 600px;
+      .caption h2 {
+        font-size: 24px;
+
+      }
+    }
+
+    .banner .owl-nav {
+      display: none !important;
+    }
+  }
+  .service-section{
+    padding: 50px 0;
+    .row  {
+      padding-top:30px;
+    }
+    .s-width{
+      margin: 5px;
+    }
+  }
+}
+
+//mobile screen css
+@media screen and (max-width: 575px) {
+  .section-padding {
+    padding: 50px 0 25px !important;
+  }
+  //header section
+  .header .bottom-header .mobile-navigation {
+    top: 64px;
+  }
+
+  //slider section
+  #top-banner {
+    .slider-images {
+      height: 450px;
+
+      .container {
+        left: 0 !important;
+        top: 23% !important;
+      }
+
+      .caption {
+        padding: 0;
+        h2 {
+          font-size: 24px;
+
+        }
+
+        p {
+          font-size: 14px;
+        }
+
+        a {
+          font-size: 14px;
+          margin-right: 10px;
+          padding: 8px 15px;
+        }
+      }
+    }
+  }
+
+  .footer {
+    &_title {
+      .heading h3 {
+        font-size: 18px;
+        padding-bottom: 5px !important;
+      }
+    }
+
+    .social_icons {
+      .heading h3 {
+        font-size: 16px;
+
+      }
+
+      ul > li > a span:first-child {
+        padding: 5px !important;
+        border-radius: 50%;
+        margin-right: 5px !important;
+      }
+
+    }
+  }
+  //our service//
+  .our_services {
+    &-left {
+      .d-flex {
+        flex-wrap: wrap;
+      }
+
+      &--left {
+        width: 100%;
+        padding: 20px;
+
+        figure {
+          max-height: 200px;
+          overflow: hidden;
+
+          img {
+            object-fit: contain;
+            height: 100%;
+          }
+        }
+      }
+
+      &--right {
+        padding: 20px;
+        width: 100%;
+      }
+    }
+  }
+  //banner area///'
+  .banner_area{
+    top: -80px!important;
+  }
+}
+
+//mobile xs screen css
+@media screen and (max-width: 375px) {
+  #top-banner {
+    .slider-images {
+      //height: 300px;
+      .container {
+        left: 0 !important;
+        top: 20% !important;
+      }
+
+    }
+  }
+}

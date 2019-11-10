@@ -1,0 +1,168 @@
+//css for the service page //
+.our_services {
+  .heading h2 {
+    position: relative;
+    margin-bottom: 30px;
+    font-weight: bold;
+    color: $dblue;
+    padding-top: 30px;
+
+    &:after {
+      position: absolute;
+      content: '';
+      bottom: 0;
+      width: 100px;
+      height: 2px;
+      background: $dred;
+      left: 0;
+    }
+  }
+
+  &-left {
+    .d-flex {
+      width: 100%;
+      margin-bottom: 30px;
+
+
+    }
+
+    &--left {
+      width: 33%;
+      figure{
+        max-height: 300px;
+        overflow: hidden;
+      }
+    }
+
+    &--right {
+      width: 65%;
+      padding: 0 15px;
+      min-height: 235px;
+
+      .title h3 {
+        font-weight: bold;
+      }
+
+      p {
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  &-right {
+
+    &--links {
+      li a {
+        background: #fff;
+        padding: 10px 20px;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        border-bottom: 2px solid #f2f6f9;
+
+        figure {
+          width: 30px;
+          height: 30px;
+          margin-right: 10px;
+
+          img {
+            height: 100%;
+            object-fit: contain;
+            filter: grayscale(100%);
+          }
+        }
+
+      }
+
+      li a.active, li a:hover {
+        color: $dred;
+        font-weight: bold;
+      }
+    }
+
+    .contact_us {
+      margin: 30px auto;
+      padding: 50px 20px;
+      background: #ffffff;
+      text-align: justify;
+
+      h2 {
+        font-weight: normal;
+      }
+
+      p {
+        padding: 20px 0;
+      }
+
+      .button_all {
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+//css for the service section///
+.service-section {
+  padding: 50px 0 100px;
+
+  .row {
+    padding-top: 100px;
+
+  }
+
+  .s-width {
+    max-width: 250px;
+    max-height: 250px;
+    position: relative;
+    margin: 0 50px;
+    text-align: center;
+    @media screen and (max-width:991px){
+      max-width: 140px;
+      max-height: 140px;
+    }
+
+
+    img.iproducts_bg {
+      transform: rotate(45deg);
+      filter: grayscale(100%);
+      @media screen and (max-width:767px) {
+       transform: none;
+      }
+    }
+
+    img.s-icon {
+      z-index: 2;
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      top: 40%;
+      transform: translate(-50%, -50%);
+      filter: grayscale(100%) contrast(100%);
+    }
+
+    strong {
+      position: absolute;
+      top: 70%;
+      transform: translate(-50%, -50%);
+      @media screen and (max-width:991px) {
+        margin: 10px 0 0;
+      }
+    }
+
+    &:hover {
+      img.iproducts_bg {
+        box-shadow: 5px 5px 7px #ccc;
+      }
+
+      img.s-icon {
+        filter: grayscale(100%) contrast(0%);
+      }
+    }
+  }
+}
+
+.about-section {
+  padding: 50px 0 100px;
+  background: url('../images/about-bg.jpg') no-repeat;
+  background-size: cover;
+}

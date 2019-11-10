@@ -1,0 +1,280 @@
+<div class="content-box-row">
+    <div class="content-box">
+
+        <form action="" id="msform">
+            <!-- progressbar -->
+            <ul class="liststyle--none" id="progressbar">
+                <li class="actively">Address</li>
+                <li>Payment</li>
+                <li>Done</li>
+                <div class="clearfix"></div>
+            </ul>
+            <fieldset class="">
+                <div class="row addressing field">
+                    <div class="col-md-8">
+                        <div class="content-box content-box--shadow checkout-add-new-address">
+                            <span class="style--checkout-title">Add new address</span>
+                            <hr>
+                            {#<form>#}
+                            <div class="form-group">
+                                <label for="acc_firstName">First Name *</label>
+                                <input type="text" class="form-control" id="acc_firstName">
+                            </div>
+                            <div class="form-group">
+                                <label for="acc_lastName">Last Name *</label>
+                                <input type="text" class="form-control" id="acc_lastName">
+                            </div>
+                            <div class="form-group">
+                                <label for="country">Country *</label>
+                                <select class="form-control" id="country">
+                                    <option>Nepal</option>
+                                    <option>India</option>
+                                    <option>Pakistan</option>
+                                    <option>USA</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="city" >City *</label>
+                                <select class="form-control" id="city">
+                                    <option>Kathmandu</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="acc_streetName">Street Name/No *</label>
+                                <input type="text" class="form-control" id="acc_streetName">
+                            </div>
+                            <div class="form-group">
+                                <label for="nearestLandmark">Nearest Landmark *</label>
+                                <input type="text" class="form-control" id="nearestLandmark">
+                            </div>
+                            <div class="form-group">
+                                <label for="locationType">Location Type *</label>
+                                <select class="form-control" id="locationType">
+                                    <option>Home</option>
+                                    <option>Business</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="mobile">Mobile *</label>
+                                <div class="input-group">
+                                    <span class="input-group-addon">+977</span>
+                                    <input type="text" class="form-control" id="mobile" aria-describedby="inputGroupSuccess2Status">
+                                </div>
+                            </div>
+
+
+                            <button type="button" class="btn btn-primary pull-right next action-button">Save address</button>
+                            {#<input type="button" name="next" class="next action-button" value="Next" />#}
+                            <div class="clearfix"></div>
+                            {#</form>#}
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="content-box content-box--shadow ">
+                            <span class="style--checkout-title pull-left">Shopping cart</span>
+                            <a href="" class="link pull-right ">Back to cart</a>
+                            {#<div class="clearfix"></div>#}
+                            <div class="clearfix"></div>
+                            <hr>
+                            <div class="grouped-list">
+                                <ul class="liststyle--none your-shopping-cart-list">
+                                    <li>
+                                        <div class="shopping-cart-card">
+                                            <div class="img">
+                                                <a href="">
+
+                                                    <img src="http://www.samsung.com/global/microsite/galaxycamera/images/design/img_nx_product_1.jpg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="data">
+                                                <strong>
+                                                    <a href="">canon dslr camera</a>
+                                                </strong>
+                                                <span class="price bold">
+                                            Rs.9300
+                                        </span>
+                                                <span class="small-cart-qty">
+                                            Qty: <span>1</span>
+                                        </span>
+
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="shopping-cart-card">
+                                            <div class="img">
+                                                <a href="">
+
+                                                    <img src="http://www.samsung.com/global/microsite/galaxycamera/images/design/img_nx_product_1.jpg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="data">
+                                                <strong>
+                                                    <a href="">canon dslr camera</a>
+                                                </strong>
+                                                <span class="price bold">
+                                            Rs.9300
+                                        </span>
+                                                <span class="small-cart-qty">
+                                            Qty: <span>1</span>
+                                        </span>
+
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="your-shopping-cart-summary">
+                            <strong class="hide">Summary</strong>
+                            <div class="block">
+                                <span class="total">Item(s):</span>
+                                <span id="SumCartAjax" class="total-amount">
+						            <span id="PriceTotal" data-sub-total="29200">Rs.292.00</span>
+                                </span>
+                            </div>
+                            <input type="hidden" id="CouponOffer" value="0.00">
+                            <input type="hidden" id="LocalCouponOffer" value="0.00">
+                            <div id="shipping-info" class="block hide">
+                                <span class="name">+ &nbsp;Shipping:</span>
+                                <span id="ShippingRateFree" class="total-amount ">Free Shipping</span>
+                                <span id="ShippingRate" class="total-amount hide" data-shipping-rate="0">
+						            Rs.<span id="ShippingRateTotal">0.00</span>
+					            </span>
+                            </div>
+                            <!-- if discount -->
+
+
+                            <!-- END if discount -->
+                        </div>
+                        <div class="your-shopping-cart-total" id="grand-total">
+                            <div class="grand-total">
+                                <span class="grand-total-label">Grand Total</span>
+                                <div id="TotalCartAjax" class="font-bold pad-2 text-red align-l">
+                                    <span id="GrandTotal">
+                                        <small class="defaultCurrency">Rs</small>
+                                        <span id="grand-total-value" class="GrandTotalValue " data-price="292.00" data-price-origin="29200">292.00</span>
+                                        <small class="paypalCurrency hide">USD</small>
+                                    </span>
+                                </div>
+                                <div id="TotalCartAjaxCOD" class="hide">
+                                    <span id="GrandTotalCOD" class="GrandTotal">
+                                        <small>Rs.</small>
+							            <span class="GrandTotalValue">292.00</span>
+                                    </span>
+                                    <span class="hide">*</span>
+                                </div>
+                            </div>
+                            <div class="vat_message clearfix">
+                                <span>Order total includes any applicable VAT</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset class="">
+                <div class="row paymenting field">
+
+                    <div class="col-md-4">
+
+                        <div class="payment-method__container content-box content-box--shadow">
+                            <div class="payment-method__header">
+                                Payment method
+                            </div>
+                            <hr>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                                    <figure class="payment-method__logo-box">
+                                        <img src="http://1.bp.blogspot.com/-cOpncwOZ2sM/VdbAtf3pxlI/AAAAAAAAAKE/FX2nWmG1ZWo/s1600/esewa.png" alt="">
+                                    </figure>
+
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                                    <figure class="payment-method__logo-box">
+                                        <img src="https://cdn-images-1.medium.com/max/1006/1*xqUNa2hUbiis04Z2XTr4Jw.png" alt="">
+                                    </figure>
+
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="confirm-order__container content-box content-box--shadow">
+                            <div class="payment-method__header">Confirm order</div>
+                            <hr>
+                            <div class="panel panel-default no-border-shadow">
+                                <div id="ar-right-1">
+                                    <div class="panel-body"><div class="table-responsive">
+                                            <table class="table table-bordered table-hover">
+                                                <thead>
+                                                <tr class="warning">
+                                                    <td class="text-left">Product Name</td>
+                                                    <td class="text-left">Model</td>
+                                                    <td class="text-right">Quantity</td>
+                                                    <td class="text-right">Unit Price</td>
+                                                    <td class="text-right">Total</td>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                    <td class="text-left"><a href="">Spring Hip Hop</a>
+                                                    </td>
+                                                    <td class="text-left">Product 14</td>
+                                                    <td class="text-right">2</td>
+                                                    <td class="text-right">$26.00</td>
+                                                    <td class="text-right">$52.00</td>
+                                                </tr>
+                                                </tbody>
+                                                <tfoot>
+                                                <tr>
+                                                    <td colspan="4" class="text-right"><strong>Flat Shipping Rate:</strong></td>
+                                                    <td class="text-right">$5.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="4" class="text-right"><strong>VAT (20%):</strong></td>
+                                                    <td class="text-right">$9.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="4" class="text-right"><strong>Sub-Total:</strong></td>
+                                                    <td class="text-right">$40.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="4" class="text-right"><strong>Total:</strong></td>
+                                                    <td class="text-right">$60.00</td>
+                                                </tr>
+                                                </tfoot>
+                                            </table>
+                                        </div>
+                                        <div class="pull-right">I have read and agree to the <a href="" class="agree"><b>Terms &amp; Conditions</b></a>
+                                            <input type="checkbox" name="agree" value="1">
+                                        </div>
+                                        <div class="clearfix"></div>
+                                        <br>
+                                        {#<form action="" method="post">#}
+                                        {#<input type="button" value="Confirm Order" class="btn btn-primary pull-right next action-button">#}
+                                        {#<div class="clearfix"></div>#}
+                                        {#</form>#}
+                                        {#<input type="button" name="next" class="next action-button" value="Next" />#}
+                                    </div>
+                                </div>
+                            </div>
+                            <input type="button" value="Confirm Order" class="btn btn-primary pull-right next action-button">
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                {% include 'thankyou.njk' %}
+            </fieldset>
+        </form>
+    </div>
+</div>
