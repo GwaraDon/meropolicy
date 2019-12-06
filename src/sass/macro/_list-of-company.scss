@@ -1,0 +1,205 @@
+.company_list{
+  .sticky.fixed {
+    position: fixed;
+    top:0; left:0;
+    width: 100%;
+    background: $primary-2;
+    z-index: 99;
+    box-shadow: 0 2px 7px #ccc;
+  }
+  .details-edit-section{
+    .name{
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      font-weight: bold;
+    }
+    .other-details{
+      span{
+        margin-right: 10px;
+      }
+    }
+    .edit-details-button{
+      background: #fff;
+      border:1px solid $primary;
+      color: $primary;
+    }
+
+  }
+  .quote-tile{
+    border:1px solid $primary-2;
+    .br-1{
+      padding: 10px 20px;
+      border:none;
+      position: relative;
+      &:after{
+        position: absolute;
+        content: "";
+        width: 1px;
+        height: 100px;
+        max-height: 100px;
+        background: $primary-2;
+        right: 0;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+    .br-1:last-child:after{
+      background: none;
+    }
+
+    .buy-now-btn{
+      border:1px solid $primary;
+      padding: 10px 20px;
+      background:$primary;
+      color: white;
+      cursor: pointer;
+      display: block;
+    }
+    .uk-checkbox{
+      height: 35px!important;
+      width: 35px!important;
+      margin-left: 20px;
+      border: 1px solid $primary;
+      &:checked{
+        background-color: $primary;
+      }
+    }
+  }
+  .edit-ncb-button, .edit-expiry-button{
+
+      padding: 0 15px;
+      font-weight: bold;
+      border-bottom: 2px solid #333;
+      &:after{
+        border: solid transparent;
+        height: 0;
+        width: 0;
+        pointer-events: none;
+        border-color: rgba(0, 0, 0, 0);
+        border-top-color: #000000;
+        border-width: 4px;
+        margin-left: -4px;
+        float: right;
+        margin-top: 10px;
+        position: absolute;
+        content: "";
+        right: -5px;
+        top: -5px;
+
+      }
+    }
+  .insurer-modal, .addons-btn{
+
+
+    label{
+      width: 200px;
+      position: relative;
+      :after{
+        border: solid transparent;
+        height: 0;
+        width: 0;
+        pointer-events: none;
+        border-color: rgba(0, 0, 0, 0);
+        border-top-color: #000000;
+        border-width: 4px;
+        margin-left: -4px;
+        float: right;
+        margin-top: 10px;
+        position: absolute;
+        content: "";
+        right: 25px;
+
+      }
+    }
+
+  }
+  .addons-btn label{
+    width: 100%!important;
+  }
+}
+#company_list{
+  #edit_vehicle{
+    .details-section{
+      display: flex;
+      align-items: center;
+      padding: 10px 0;
+      label{
+        margin-right: 10px;
+        margin-bottom: 0;
+        font-weight: bold;
+      }
+
+      .detail{
+        button.active{
+          border:1px solid $primary!important;
+          padding: 10px 20px;
+          background:$primary!important;
+          color: white!important;
+          cursor: pointer;
+        }
+        .detail-view, .detail-date {
+          border-bottom: 1px solid;
+          width: 100%;
+          //max-width: 300px;
+        }
+        .edit-detail-view-text{
+          select{
+            border: none;
+            outline: none;
+          }
+        }
+      }
+    }
+  }
+  #NCB_value{
+    .clam-yes-no{
+      button.active{
+        border:1px solid $primary!important;
+              background:$primary!important;
+        color: white!important;
+
+      }
+    }
+    .ncb-options button.selected-ncb{
+      border:1px solid $primary!important;
+      background:$primary!important;
+      color: white!important;
+    }
+  }
+  #existing_policy{
+    label{
+
+        margin-right: 10px;
+        margin-bottom: 0;
+        font-weight: bold;
+
+
+    }
+     .buttons button.selected{
+       border:1px solid $primary!important;
+       background:$primary!important;
+       color: white!important;
+     }
+
+  }
+}
+.quote-tile-inner .logo-image{
+  min-height: 80px;
+  min-width: 120px;
+  margin: 0 10px;
+  display: flex;
+  align-items: center;
+  img{
+    height: 100%;
+    object-fit: contain;
+  }
+}
+.quote-tile-inner .uk-checkbox {
+  height: 35px !important;
+  width: 35px !important;
+  margin-left: 20px;
+  border: 1px solid #2ed573;
+}
+ .quote-tile-inner .uk-checkbox:checked {
+  background-color: #2ed573;
+}

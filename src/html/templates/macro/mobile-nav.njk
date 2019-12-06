@@ -1,12 +1,89 @@
-<!-- mobile menu -->
+{#<!-- mobile menu -->#}
 
-<div class="mobile-navigation " style=" display: none;">
-    <ul class=" ul-none d-flex flex-column">
-        <li><a href="index.html" class="menu active">Home</a></li>
-        <li><a href="servicepage.html" class="menu ">Services</a></li>
-        <li><a href="aboutpage.html" class="menu">About</a></li>
-        <li><a href="contactuspage.html" class="menu">Contact</a></li>
-    </ul>
+<div id="offcanvas-usage" uk-offcanvas="overlay: true; flip: true ">
+    <div class="uk-offcanvas-bar mobile-nav">
+
+        <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+        <div class="">
+
+            <ul class="metismenu" id="menu">
+                <li>
+                    <a href="index.html" aria-expanded="true">Home</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" aria-expanded="false">Life Insurance<span class="fa arrow "></span></a>
+                    <ul aria-expanded="false" class="list-levels">
+                        <li><a href="life_insurance.html"><span>Term Insurance</span></a></li>
+                        <li><a href="life_insurance.html">    Investment Plans</a></li>
+                        <li><a href="life_insurance.html"><span>Child Plans</span></a></li>
+                        <li><a href="life_insurance.html"><span>Pension Plans</span></a></li>
+                        <li><a href="life_insurance.html"><span>ULIP</span></a></li>
+                        <li><a href="life_insurance.html"><span>Money Back Policy</span></a></li>
+                        <li><a href="life_insurance.html"><span>Endowment Policy</span></a></li>
+                        <li><a href="life_insurance.html"><span>Tax Saving Investments</span></a></li>
+                        <li><a href="life_insurance.html"><span>Guaranteed Return Plans</span></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" aria-expanded="false">
+                        Health Insurance<span class="fa arrow"></span>
+                    </a>
+                    <ul aria-expanded="false" class="list-levels">
+                        <li><a href="health_insurance.html"><span>  Health Plans</span></a></li>
+                        <li><a href="health_insurance.html">  Family Health Plan</a></li>
+                        <li><a href="health_insurance.html"><span>   Senior Citizen Health Insurance</span></a></li>
+                        <li><a href="health_insurance.html"><span>Critical Illness Insurances</span></a></li>
+                        <li><a href="health_insurance.html"><span> Health Insurance Claim</span></a></li>
+                        <li><a href="health_insurance.html"><span>   Mediclaim Policy</span></a></li>
+                        <li><a href="health_insurance.html"><span>Health Insurance Calculator</span></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" aria-expanded="false">
+                        Motor Insurance<span class="fa arrow"></span>
+                    </a>
+                    <ul aria-expanded="false" class="list-levels">
+                        <li><a href="car_insurance.html"><span> Car Plans</span></a></li>
+                        <li><a href="car_insurance.html"><span> Car Insurance Claim</span></a></li>
+                        <li><a href="car_insurance.html"><span>   Two Wheeler</span></a></li>
+                        <li><a href="car_insurance.html"><span>Two Wheeler Insurance Claim</span></a></li>
+
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" aria-expanded="false">
+                        Other Insurance<span class="fa arrow"></span>
+                    </a>
+                    <ul aria-expanded="false" class="list-levels">
+                        <li><a href="home-insurance.html"><span>  Home Plans</span></a></li>
+                        <li><a href="travel-insurance.html"> Travel Insurance Plan</a></li>
+                        <li><a href="group-insurance.html">  Group Insurance Plan </a> </li>
+
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" aria-expanded="false">
+                       Renewal<span class="fa arrow"></span>
+                    </a>
+                    <ul aria-expanded="false" class="list-levels">
+                        <li><a href="renew.html"><span>  Life renew Plans</span></a></li>
+                        <li><a href="renew.html">Health renew Plan</a></li>
+
+
+                    </ul>
+                </li>
+                <li><a href="javascript:void(0)" class="menu" data-toggle="modal" data-target="#login-modal"><i class="icofont-user-alt-5 mr-1"></i><span >My account</span></a>
+
+                <li>
+                    <a href="aboutpage.html" aria-expanded="false">About us</a>
+                </li>
+                <li>
+                    <a href="contactpage.html" aria-expanded="false">Contact us</a>
+                </li>
+            </ul>
+        </div>
+    </div>
 </div>
 
 

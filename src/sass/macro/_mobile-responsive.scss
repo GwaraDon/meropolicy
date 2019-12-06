@@ -1,35 +1,15 @@
 //ipad pro
 @media screen and (max-width: 1024px) {
-  .slider-images {
-    height: 600px !important;
-  }
-}
-
-
-//medium size device
-@media screen and (max-width: 991px) {
-  .section-padding {
-    padding: 75px 0 35px !important;
-  }
-}
-
-//tablet view css
-@media screen and (max-width: 768px) {
-  //css for the header section
-  .slider-images {
-    height: 600px !important;
-  }
-}
-
-//end of tablet view
-
-@media screen and (max-width: 767px) {
   #header {
     .bottom-header {
       .bars {
+        font-weight: bold;
+        font-size: 18px;
         display: block !important;
-        color: white;
-        margin-top: -35px;
+        color: $primary;
+        border: 1px solid $primary;
+        padding: 5px 10px;
+        //margin-top: -35px;
       }
 
       .navigation {
@@ -37,10 +17,42 @@
       }
     }
   }
+  .company_list{
+    .sticky.fixed {
+      position: relative!important;
+
+    }}
+  #information{
+    .nav.nav-tabs{
+      overflow-x:scroll;
+       overflow-y: hidden;
+      a{
+        font-size: 1rem!important;
+        padding: 1rem!important;
+        margin-right: .8rem!important;
+      }
+    }
+  }
+}
+
+
+//medium size device
+@media screen and (max-width: 991px) {
+
+}
+
+//tablet view css
+@media screen and (max-width: 768px) {
+
+}
+
+//end of tablet view
+
+@media screen and (max-width: 767px) {
+
   #top-banner {
-    margin-top: -80px;
+    margin-top:0px;
     .slider-images {
-      height: 600px;
       .caption h2 {
         font-size: 24px;
 
@@ -51,32 +63,46 @@
       display: none !important;
     }
   }
-  .service-section{
-    padding: 50px 0;
-    .row  {
-      padding-top:30px;
+  .our_partner{
+    &-list{
+
+      figure {
+        max-width: 150px!important;
+      }
+      .dummy{
+        width: 150px!important;
+      }
     }
-    .s-width{
-      margin: 5px;
+  }
+  #investment .quote-tile {
+    border: 1px solid $primary-2!important;
+    padding: 5px;
+    box-shadow: 0px 2px 7px $primary-2;
+    &-inner{
+      flex-wrap: wrap;
+      justify-content: center;
+      flex-direction: column;
+      div{
+        margin: 5px 0;
+      }
+    }
+  }
+  .social_icons{
+    ul > li > a span:last-child{
+      display: none;
     }
   }
 }
 
 //mobile screen css
 @media screen and (max-width: 575px) {
-  .section-padding {
-    padding: 50px 0 25px !important;
-  }
   //header section
   .header .bottom-header .mobile-navigation {
     top: 64px;
   }
-
   //slider section
   #top-banner {
     .slider-images {
-      height: 450px;
-
       .container {
         left: 0 !important;
         top: 23% !important;
@@ -101,7 +127,91 @@
       }
     }
   }
+  //our partner section
+  .our_partner{
+    &-list{
 
+      figure, .dummy{
+        max-width: 100px!important;
+      }
+    }
+  }
+
+  //my account side bar section
+    .sidebar .sidebar-ul  {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 20px;
+      padding-bottom: 20px;
+      li{
+        margin: 5px;
+        border-bottom: 1px solid #dee2e6!important;
+      }
+      a  {
+        padding: 10px!important;
+        background-color: $primary-2;
+
+        &:hover, &.active{
+          border-left: none!important;
+          border-bottom: 2px solid $secondary;
+        }
+        i{
+          font-size: 1rem!important;
+          margin-right: 0!important;
+        }
+        span{
+          display: none;
+        }
+      }
+    }
+
+  //one step for checkout
+  .one-step-checkout{
+    .your-order  {
+      .d-flex{
+        flex-direction: column!important;
+        figure{
+          margin-bottom: 10px;
+          border-bottom: 1px solid $primary-2;
+        }
+      }
+      h3{
+      font-size: 18px;
+      font-weight: bold;
+    }
+    }
+  }
+
+  //companies list quotes
+  .quote-tile {
+    width: 47%;
+    margin: 0 1%;
+    text-align: center;
+    &-inner{
+      flex-wrap: wrap;
+      flex-direction: column;
+      .uk-checkbox{
+        margin-left: 0!important;
+      }
+      .logo-image{
+        border-bottom: 1px solid #dee2e6;
+      }
+      .br-1{
+        position: static!important;
+        padding: 5px!important;
+      }
+    }
+  }
+  .list-of-plans, .plan-detail{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  //health insurance quote dots
+  #get_quote .form_pagination ul li span.steps:after {
+    width: 50px!important;
+  }
+//footer
   .footer {
     &_title {
       .heading h3 {
@@ -122,40 +232,10 @@
         margin-right: 5px !important;
       }
 
+
     }
   }
-  //our service//
-  .our_services {
-    &-left {
-      .d-flex {
-        flex-wrap: wrap;
-      }
 
-      &--left {
-        width: 100%;
-        padding: 20px;
-
-        figure {
-          max-height: 200px;
-          overflow: hidden;
-
-          img {
-            object-fit: contain;
-            height: 100%;
-          }
-        }
-      }
-
-      &--right {
-        padding: 20px;
-        width: 100%;
-      }
-    }
-  }
-  //banner area///'
-  .banner_area{
-    top: -80px!important;
-  }
 }
 
 //mobile xs screen css
@@ -165,9 +245,19 @@
       //height: 300px;
       .container {
         left: 0 !important;
-        top: 20% !important;
+        top: 15% !important;
       }
 
     }
   }
+  //health insurance quote dots
+  #get_quote .form_pagination ul li span.steps:after {
+    width: 30px!important;
+    left: -10%!important;
+  }
+}
+//mobile
+@media screen and (max-width: 319px){
+  .quote-tile {
+    width: 97%;}
 }

@@ -1,0 +1,226 @@
+{% include 'dash-top.njk' %}
+
+
+    {% include 'header.njk' %}
+
+
+<div class="payment-page light-bg py-5 border-top">
+    <div class="container">
+        <div class="row bg-white py-5">
+            <div class="heading px-4 mb-3">
+                <h1>Choose Your Payment Method</h1>
+            </div>
+            <div class="col-md-9">
+                <div class="payment-mode border d-flex mb-5 ">
+                    <ul class="nav nav-tabs d-flex flex-column mr-4" id="payment-tab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="debit-tab" data-toggle="tab" href="#debit" role="tab"
+                               aria-controls="debit" aria-selected="true">Debit Card</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="credit-tab" data-toggle="tab" href="#credit" role="tab"
+                               aria-controls="credit" aria-selected="false">Credit Card</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="net_banking-tab" data-toggle="tab" href="#net_banking" role="tab"
+                               aria-controls="contact" aria-selected="false">Net Banking</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="wallet-tab" data-toggle="tab" href="#wallet" role="tab"
+                               aria-controls="contact" aria-selected="false">Wallet</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content p-3" id="payment-type">
+                        <div class="tab-pane fade show active" id="debit" role="tabpanel" aria-labelledby="debit-tab">
+                            <div class="sub-heading p-2 border-bottom mb-3">
+                                <h3><strong>Debit card details</strong></h3>
+                            </div>
+                            <div class="debit-card-form ">
+                                <form action="">
+                                    <div class="uk-margin">
+                                        <label for="card-number"> Card Number</label>
+                                        <input class="uk-input" type="text" id="card-number"
+                                               placeholder="xxxx xxxx xxxx xxxx" maxlength="19">
+                                    </div>
+                                    <div class="uk-margin">
+                                        <label for="card-name">Card Name</label>
+                                        <input class="uk-input" type="text" id="card-name" placeholder="Enter the given card name">
+                                    </div>
+                                    <div class="uk-grid-small" uk-grid>
+                                        <div class="uk-width-1-2@s">
+                                            <label class="uk-form-label" for="expired-date">Expire Date</label>
+                                            <div class="input-group date-picker date" data-date-format="mm-dd-yyyy">
+                                                <input class="uk-input" type="text" id="expired-date" readonly>
+                                                <span class="add-on pt-2 d-none"> <i
+                                                            class="icofont-edit-alt"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="uk-width-1-2@s">
+                                            <label class="uk-form-label" for="ccv">CCV</label>
+                                            <div class="uk-form-controls">
+                                                <input class="uk-input" id="ccv" type="number"
+                                                       maxlength="3" placeholder="xxx">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="payable-amount my-3">
+                                        <button class="button-primary">
+                                            Pay <span>18000</span>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+
+                        </div>
+                        <div class="tab-pane fade" id="credit" role="tabpanel" aria-labelledby="credit-tab">
+
+                            <div class="sub-heading p-2 border-bottom mb-3">
+                                <h3><strong>Credit card details</strong></h3>
+                            </div>
+                            <div class="credit-card-form ">
+                                <form action="">
+                                    <div class="uk-margin">
+                                        <label for="card-number"> Card Number</label>
+                                        <input class="uk-input" type="text" id="card-number"
+                                               placeholder="xxxx xxxx xxxx xxxx" maxlength="19">
+                                    </div>
+                                    <div class="uk-margin">
+                                        <label for="card-name">Card Name</label>
+                                        <input class="uk-input" type="text" id="card-name" placeholder="Enter the given card name">
+                                    </div>
+                                    <div class="uk-grid-small" uk-grid>
+                                        <div class="uk-width-1-2@s">
+                                            <label class="uk-form-label" for="expired-date">Expire Date</label>
+                                            <div class="input-group date-picker date" data-date-format="mm-dd-yyyy">
+                                                <input class="uk-input" type="text" id="expired-date" readonly>
+                                                <span class="add-on pt-2 d-none"> <i
+                                                            class="icofont-edit-alt"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="uk-width-1-2@s">
+                                            <label class="uk-form-label" for="ccv">CCV</label>
+                                            <div class="uk-form-controls">
+                                                <input class="uk-input" id="ccv" type="number"
+                                                       maxlength="3" placeholder="xxx">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="payable-amount my-3">
+                                        <button class="button-primary">
+                                            Pay <span>18000</span>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="net_banking" role="tabpanel" aria-labelledby="net_banking-tab">
+                            <div class="sub-heading p-2 border-bottom mb-3">
+                                <h3><strong>Net Banking</strong></h3>
+                            </div>
+                            <div class="net_banking-form ">
+                                <form action="">
+                                    <div class="uk-margin">
+                                        <label for="card-number"> Select Bank </label>
+                                        <div class="uk-form-controls">
+                                            <select class="uk-select" id="form-stacked-select">
+                                                <option>NIC Asia Bank</option>
+                                                <option>Everest Bank</option>
+                                                <option>Nabil Bank</option>
+                                                <option>Prime Bank</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="payable-amount my-3">
+                                        <button class="button-primary">
+                                            Pay <span>18000</span>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="wallet" role="tabpanel" aria-labelledby="wallet-tab">
+                            <div class="sub-heading p-2 border-bottom mb-3">
+                                <h3><strong>Wallet/Payment Banking</strong></h3>
+                            </div>
+                            <div class="wallet-form ">
+                                <form action="">
+                                    <label>
+                                        <input type="radio" name="test" value="esewa" checked>
+                                        <img src="images/esewa_logo.png" style="background:#333;">
+                                    </label>
+
+                                    <label>
+                                        <input type="radio" name="test" value="khalti">
+                                        <img src="images/khalti-logo.svg">
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="test" value="cellpay">
+                                        <img src="images/cellpay.png">
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="test" value="Ime-Pay-Nepal">
+                                        <img src="images/Ime-Pay-Nepal.jpg">
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="test" value="iPay-Nepal">
+                                        <img src="images/iPay-Nepal.jpg">
+                                    </label>
+
+                                    <div class="payable-amount my-3">
+                                        <button class="button-primary">
+                                            Pay <span>18000</span>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="user-detail border mb-5">
+                    <div class="heading border-bottom mb-3  p-2">
+                        Proposer's Detail
+                    </div>
+                    <div class="user-detail-data px-2 ">
+                        <div class="email d-flex mb-2 align-items-center">
+                            <i class="icofont-email mr-3"></i>
+                            <span>herome@gmail.com</span>
+                        </div>
+                        <div class="mobile d-flex mb-2 align-items-center">
+                            <i class="icofont-mobile-phone mr-3"></i>
+                            <span>98**********</span>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="order-detail border ">
+                    <div class="heading border-bottom mb-3  p-2">
+                       Your Order
+                    </div>
+                    <div class="order-detail-data">
+                        <div class="d-flex mb-2  border-bottom p-2 align-items-center">
+                            <figure style="width: 100px;margin-right: 10px"><img src="images/nepali.jpg" alt=""></figure>
+                            <div class="product_name">
+                                <p style="font-size: 12px">Name of the product you had order</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between p-2">
+                            <span><strong>Total Amount</strong></span>
+                            <span><strong>180000</strong></span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+{% include 'footer.njk' %}
+
+{% include 'dash-bottom.njk' %}

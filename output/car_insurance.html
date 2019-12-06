@@ -1,0 +1,893 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mero Policy</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- bootstrap datepicker -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.css" rel="stylesheet" type="text/css" />
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
+     <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.16/css/uikit.min.css" />
+    <!-- metis menu -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/metisMenu/2.7.8/metisMenu.min.css">
+     
+    <link rel="stylesheet" href="css/icofont/icofont.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- font family -->
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300|Roboto:300&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="uk-offcanvas-content">
+
+
+    <!-- Page Preloder -->
+<header class="header " id="header">
+    <div class="bottom-header container py-3 relative ">
+        <div class="row  align-items-center">
+            <div class="col-lg-2 col-md-3 col-8">
+
+                <div class="logo">
+                    <a href="index.html">
+
+
+                        <img src="images/Mero/Untitled-final.png" alt="">
+                    </a>
+                </div>
+
+            </div>
+            <div class="col-lg-10 col-md-9 col-4">
+                <div href="#offcanvas-usage" uk-toggle class="bars d-none float-right" id="bars">
+                    <span uk-icon="menu"></span>
+                </div>
+                <div class="clearfix"></div>
+                <div class="navigation">
+                    <ul class=" ul-none d-flex justify-content-end align-items-center ">
+                        <li><a href="life_insurance.html" class="menu active">Life Insurance</a>
+                        <ul class=" sub-dropdown sub-menu" uk-dropdown  >
+                                <li><a  href="" ><span >Term Insurance</span></a></li>
+                                <li> <a  href="investment_plans.html"><div class="icon"></div>Investment Plans</a></li>
+                                <li><a  href="/"><span >Child Plans</span></a></li>
+                                <li><a  href="/"><span >Pension Plans</span></a></li>
+                                <li><a  href="/"><span >ULIP</span></a></li>
+                                <li><a  href=""><span >Money Back Policy</span></a></li>
+                                <li><a  href=""><span >Endowment Policy</span></a></li>
+                                <li><a  href=""><span >Tax Saving Investments</span></a></li>
+                                <li><a  href=""><span >Guaranteed Return Plans</span></a></li>
+
+                        </ul>
+
+                        </li>
+                        </li>
+                        <li><a href="health_insurance.html" class="menu">Health Insurance</a>
+                            <ul class=" sub-dropdown sub-menu" uk-dropdown  >
+                                <li><a  href="" ><span >  Health Plans</span></a></li>
+                                <li> <a  href="/"><div class="icon"></div>   Family Health Plan</a></li>
+                                <li><a  href="/"><span >   Senior Citizen Health Insurance</span></a></li>
+                                <li><a  href="/"><span >Critical Illness Insurances</span></a></li>
+                                <li><a  href="/"><span > Health Insurance Claim</span></a></li>
+                                <li><a  href=""><span >   Mediclaim Policy</span></a></li>
+                                <li><a  href=""><span >Health Insurance Calculator</span></a></li>
+                            </ul>
+                        </li>
+                        <li><a href="car_insurance.html" class="menu">Motor Insurance</a></li>
+                        <li><a href="" class="menu">Other Insurance</a>
+                            <ul class=" sub-dropdown sub-menu" uk-dropdown  >
+                                <li><a  href="home-insurance.html" ><span >  Home Plans</span></a></li>
+                                <li> <a  href="travel-insurance.html"><div class="icon"></div>   Travel Insurance Plan</a></li>
+                                <li> <a  href="group-insurance.html"><div class="icon"></div>   Group Insurance Plan</a></li>
+                          </ul>
+                        </li>
+                        <li><a href="renew.html" class="menu">Renewal</a>
+                            <ul class=" sub-dropdown sub-menu" uk-dropdown  >
+                                <li><a  href="renew.html" ><span >  Health Renewal</span></a></li>
+                                <li> <a  href="renew.html"><div class="icon"></div>  Life Renewal</a></li>
+                           </ul>
+                        </li>
+                        <li><a href="javascript:void(0)" class="menu" data-toggle="modal" data-target="#login-modal"><i class="icofont-user-alt-5 mr-1"></i><span >My account</span></a>
+                            <!-- login modal to be called -->
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- mobile menu -->
+        
+
+<div id="offcanvas-usage" uk-offcanvas="overlay: true; flip: true ">
+    <div class="uk-offcanvas-bar mobile-nav">
+
+        <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+        <div class="">
+
+            <ul class="metismenu" id="menu">
+                <li>
+                    <a href="index.html" aria-expanded="true">Home</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" aria-expanded="false">Life Insurance<span class="fa arrow "></span></a>
+                    <ul aria-expanded="false" class="list-levels">
+                        <li><a href="life_insurance.html"><span>Term Insurance</span></a></li>
+                        <li><a href="life_insurance.html">    Investment Plans</a></li>
+                        <li><a href="life_insurance.html"><span>Child Plans</span></a></li>
+                        <li><a href="life_insurance.html"><span>Pension Plans</span></a></li>
+                        <li><a href="life_insurance.html"><span>ULIP</span></a></li>
+                        <li><a href="life_insurance.html"><span>Money Back Policy</span></a></li>
+                        <li><a href="life_insurance.html"><span>Endowment Policy</span></a></li>
+                        <li><a href="life_insurance.html"><span>Tax Saving Investments</span></a></li>
+                        <li><a href="life_insurance.html"><span>Guaranteed Return Plans</span></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" aria-expanded="false">
+                        Health Insurance<span class="fa arrow"></span>
+                    </a>
+                    <ul aria-expanded="false" class="list-levels">
+                        <li><a href="health_insurance.html"><span>  Health Plans</span></a></li>
+                        <li><a href="health_insurance.html">  Family Health Plan</a></li>
+                        <li><a href="health_insurance.html"><span>   Senior Citizen Health Insurance</span></a></li>
+                        <li><a href="health_insurance.html"><span>Critical Illness Insurances</span></a></li>
+                        <li><a href="health_insurance.html"><span> Health Insurance Claim</span></a></li>
+                        <li><a href="health_insurance.html"><span>   Mediclaim Policy</span></a></li>
+                        <li><a href="health_insurance.html"><span>Health Insurance Calculator</span></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" aria-expanded="false">
+                        Motor Insurance<span class="fa arrow"></span>
+                    </a>
+                    <ul aria-expanded="false" class="list-levels">
+                        <li><a href="car_insurance.html"><span> Car Plans</span></a></li>
+                        <li><a href="car_insurance.html"><span> Car Insurance Claim</span></a></li>
+                        <li><a href="car_insurance.html"><span>   Two Wheeler</span></a></li>
+                        <li><a href="car_insurance.html"><span>Two Wheeler Insurance Claim</span></a></li>
+
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" aria-expanded="false">
+                        Other Insurance<span class="fa arrow"></span>
+                    </a>
+                    <ul aria-expanded="false" class="list-levels">
+                        <li><a href="home-insurance.html"><span>  Home Plans</span></a></li>
+                        <li><a href="travel-insurance.html"> Travel Insurance Plan</a></li>
+                        <li><a href="group-insurance.html">  Group Insurance Plan </a> </li>
+
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" aria-expanded="false">
+                       Renewal<span class="fa arrow"></span>
+                    </a>
+                    <ul aria-expanded="false" class="list-levels">
+                        <li><a href="renew.html"><span>  Life renew Plans</span></a></li>
+                        <li><a href="renew.html">Health renew Plan</a></li>
+
+
+                    </ul>
+                </li>
+                <li><a href="javascript:void(0)" class="menu" data-toggle="modal" data-target="#login-modal"><i class="icofont-user-alt-5 mr-1"></i><span >My account</span></a>
+
+                <li>
+                    <a href="aboutpage.html" aria-expanded="false">About us</a>
+                </li>
+                <li>
+                    <a href="contactpage.html" aria-expanded="false">Contact us</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+    </div>
+
+</header>
+
+
+
+    <!-- Banner area -->
+<section id="breadcrumb">
+    <div class="container py-3 border-bottom ">
+    <ul class="uk-breadcrumb">
+        <li><a href="#">Item</a></li>
+        <li><a href="#">Item</a></li>
+        <li class="uk-disabled"><a>Disabled</a></li>
+        <li><span>Active</span></li>
+    </ul>
+    </div>
+</section>
+<!-- End Banner area -->
+    <section id="get_quote">
+    <div class="container pt-5">
+        <!-- first row -->
+        <div class="row">
+            <!-- left section is for the image-->
+            <div class="col-md-6 left-section">
+                <div class="image-field">
+                    <figure><img src="images/car.svg" alt=""></figure>
+                </div>
+            </div>
+            <!-- right section for the form -->
+            <div class="col-md-6 right-section">
+                <div class="heading">
+                    <h3>
+                        <strong>Free quote</strong> from top insurers with <strong>lowest premiums </strong> in
+                        <span><strong> 30 seconds</strong></span>
+                    </h3>
+                </div>
+                <div class="form-section">
+                    <div class="form-field mb-5">
+                        <form action="">
+                            <input type="text" class="uk-input" placeholder="Enter Your Car Number">
+                            <a href="companies.html" class="button-primary d-block text-center mb-3 w-100">
+                                get a quote
+                            </a>
+                        </form>
+                    </div>
+                    <div class="divider position-relative border-bottom my-3">
+
+                    </div>
+                    <div class="d-block m-auto pt-5 text-center">
+                        <a href="collect-detail.html " type="button" class="button-primary-outline">
+                            proceed without car no.
+                        </a>
+                    </div>
+                    <div class="have-brand-new d-block m-auto pt-3 text-center">
+                        <a>I have a brand new.</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <hr>
+        <!-- second row is for the information -->
+        <div class="row pb-5">
+            <div class="best_plans">
+                <div class="clearfix">
+                    <div class="heading">
+                        <h3 class="font-weight-bold p-2">Best Car Insurance Plans</h3></div>
+                </div>
+                <div class="plans_list d-flex flex-wrap align-items-center  ">
+                    <div class="products d-flex align-items-center ">
+                        <figure>
+                            <i class="icofont-money"></i>
+                        </figure>
+                        <div>
+                       <p> <strong>Save upto 20%</strong></p>
+                           <p>low car premium</p>
+                        </div>
+                    </div>
+                    <div class=" products d-flex align-items-center ">
+                        <figure>
+                            <i class="icofont-doctor"></i>
+                        </figure>
+                        <div>
+                            <p> <strong>Save upto 20%</strong></p>
+                            <p>low car premium</p>
+                        </div>
+                    </div>
+                    <div class=" products d-flex align-items-center ">
+                        <figure>
+                            <i class="icofont-investigator"></i>
+                        </figure>
+                        <div>
+                            <p> <strong>Save upto 20%</strong></p>
+                            <p>low car premium</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+</section>
+    <section id="information">
+    <div class="container pt-5">
+        <div class="row">
+            <div class="col-md-8 left-section">
+                <nav>
+                    <div class="nav nav-tabs flex-nowrap " id="nav-tab" role="tablist" >
+                        <a class="nav-item nav-link font-weight-bold p-4  mr-3 active" id="about_insurance-tab" data-toggle="tab" href="#about_insurance" role="tab" aria-controls="about_insurance" aria-selected="true">About Insurance</a>
+                        <a class="nav-item nav-link font-weight-bold p-4  mr-3" id="best_insurance-tab" data-toggle="tab" href="#best_insurance" role="tab" aria-controls="about_insurance" aria-selected="false">Best Insurance</a>
+                        <a class="nav-item nav-link font-weight-bold p-4  mr-3" id="FAQ-tab" data-toggle="tab" href="#FAQ" role="tab" aria-controls="about_insurance" aria-selected="false">FAQ's</a>
+                        <a class="nav-item nav-link font-weight-bold p-4  mr-3" id="reviews-tab" data-toggle="tab" href="#reviews" role="tab" aria-controls="about_insurance" aria-selected="false">Client's Reviews</a>
+                    </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane pt-3  fade show active" id="about_insurance" role="tabpanel" aria-labelledby="nav-home-tab">
+                        <h3 class="py-3"> <strong> Car Insurance</strong></h3>
+                    <p>Car Insurance is a contract between the insurance company and insured that safeguards the policyholder against financial loss in case of theft or accident. A car insurance policy also offers coverage for damage or loss caused to your car.</p>
+                    <p><img style="margin: 10px; float: right;" src="https://www.policybazaar.com/images/Health/car-insurance-types.jpg" alt="Car Insurance Types" width="380" height="480" /></p>
+                    <p>It is mandatory to buy car insurance in India irrespective of the vehicle type, i.e. personal or commercial vehicle. Moreover, the premium amount of your car insurance is decided based on the Insured Declared Value or IDV of the vehicle. If you increase the IDV, the premium rises and if you lower it, the premium reduces.</p>
+                    <p>It is important for any policyholder to compare various car insurance options before going for car insurance renewal or buying a new policy. Compare various insurance plans online on Policybazaar and buy the one that fulfills your insurance expectations hassle-free:</p>
+                    <ul class="data_ul">
+                        <li>Get the best plans from top Insurance Providers</li>
+                        <li>Instant and paperless renewal</li>
+                        <li>Comprehensive coverage for vehicle</li>
+                        <li>A wide range of Add-on covers for improved protection</li>
+                    </ul>
+                    <h3><strong>Types of Car Insurance in India</strong></h3>
+                    <p>There are primarily 2 types of Car Insurance that are available in India -</p>
+                    <div class="icon-div">
+                        <h3  style="width: auto; display: inline-block;"><strong>Third Party Car Insurance </strong></h3>
+                    </div>
+                    <p><a href="https://www.policybazaar.com//motor-insurance/third-party-insurance/">Third party car insurance</a> safeguards you from any legal liability due to your own car’s involvement in an accident. Your insurance provider will compensate you for death, disability, injury, or property damage to any third-party. Therefore, you are protected from the financial liability towards the third-party.</p>
+                    <p>Third-party Liability Car Insurance is a mandate in India under the Motor Vehicles Act, 1988.</p>
+                    <h3 class="py-3"><strong>Comprehensive Car Insurance</strong></h3>
+                    <p>A comprehensive car insurance policy provides coverage for third party liability as well as damages caused to your own car. In comparison with third party liability car insurance, a comprehensive car insurance policy offers extensive coverage, more benefits and covers the damages caused to the insured car in case of an accident, collision, theft, etc.</p>
+                    <p>A comprehensive policy can be further extended by opting for add-ons like accessories cover, engine protector, zero depreciation cover, medical expenses, etc. This type of coverage is the most popular as it offers end-to-end coverage and thus less stress for the policyholder.</p>
+                    <p><a href="https://www.policybazaar.com/motor-insurance/car-insurance/articles/what-does-car-insurance-cover/">Get More Info on Car Insurance Coverage</a></p>
+                    <h3 class="py-3">What is Covered Under Car Insurance?</h3>
+                    <p><strong>The car insurance covers</strong></p>
+                    <ul class="data_ul">
+                        <li>Loss or damage to the insured vehicle.</li>
+                        <li>Loss or damage to your vehicle caused by accident, theft, fire, explosion, self-ignition, lightning, riots, strikes or act of terrorism, natural calamities.</li>
+                        <li>Financial liability caused by the injury/death of a third party or damage to the property.</li>
+                        <li>Personal accidental insurance cover.</li>
+                    </ul>
+                    <h3>What is not Covered in a Car Insurance Policy?</h3>
+                    <p><strong>Following features are usually not covered in car insurance:</strong></p>
+                    <ul class="data_ul">
+                        <li>Loss or damage if a policy is not in force.</li>
+                        <li>Gradual wear and tear of car and its parts.</li>
+                        <li>Loss or damage to the vehicle when driven by a person without a valid driving license.</li>
+                        <li>Loss or damage to the vehicle as a result of intoxication due to drugs, alcohol etc.</li>
+                        <li>Loss or damage to the engine as a result of oil leakage.</li>
+                        <li>Loss or damage to the vehicle as a result of abuse of car manufacturer's guidelines.</li>
+                    </ul>
+                    <h3><strong>Best Car Insurance Companies with Claim Settlement Ratio 2018</strong></h3>
+
+                    </div>
+                    <div class="tab-pane pt-3  fade" id="best_insurance" role="tabpanel" aria-labelledby="nav-profile-tab">
+                        <p>Looking for car insurance comparison? PolicyBazaar provides you an innovative interface to compare car insurance policies by best car insurers in India. Check out details on each insurer and select the one that suits your needs. </p>
+                    </div>
+                    <div class="tab-pane pt-3  fade" id="FAQ" role="tabpanel" aria-labelledby="nav-faq-tab">
+                        <div class="faq">
+                        <ul uk-accordion="multiple: true">
+                            <li class="uk-open">
+                                <a class="uk-accordion-title font-weight-bold mt-3" href="#">What is IDV (insured declared value) in Car Insurance?</a>
+                                <div class="uk-accordion-content">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                </div>
+
+                            </li>
+
+                            <li>
+                                <a class="uk-accordion-title font-weight-bold mt-3" href="#">What is voluntary deductible in Car Insurance?</a>
+                                <div class="uk-accordion-content">
+                                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor reprehenderit.</p>
+                                </div>
+                            </li>
+
+                            <li>
+                                <a class="uk-accordion-title font-weight-bold mt-3" href="#">Why should one have a comprehensive car insurance policy when law mandates insurance only for 3rd party injury, death or property loss?</a>
+                                <div class="uk-accordion-content">
+                                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident.</p>
+                                </div>
+                            </li>
+                        </ul>
+                        </div>
+                    </div>
+                    <div class="tab-pane pt-3  fade" id="reviews" role="tabpanel" aria-labelledby="reviews-tab">
+                     <div class="d-flex align-items-center py-3"><p>
+                             Do you want to write a review?
+                         </p>
+                         <button id="write-review" class="button-primary ml-3">
+                             click here
+                         </button>
+
+                     </div>
+                        <div class="write_review" style="display: none">
+                           <form class="uk-grid-small mb-5" uk-grid>
+                                <div class="heading uk-width-1-1" >
+                                    <h3 class="font-weight-bold">
+                                        Write a review
+                                    </h3>
+                                </div>
+                               <div class="uk-width-1-2@s">
+                                   <div class="uk-margin mb-3">
+                                       <label class="uk-form-label" for="form-horizontal-text">Name</label>
+                                       <div class="uk-form-controls">
+                                           <input class="uk-input" id="form-horizontal-text" type="text" placeholder="Enter your name">
+                                       </div>
+                                   </div>
+                               </div>
+
+                               <div class="uk-width-1-2@s">
+                                   <div class="uk-margin mb-3">
+                                       <label class="uk-form-label" for="form-horizontal-text">Address</label>
+                                       <div class="uk-form-controls">
+                                           <input class="uk-input" id="form-horizontal-text" type="text" placeholder="Address...">
+                                       </div>
+                                   </div>
+                               </div>
+
+
+
+                               <div class="uk-width-1-2@s">
+                                   <div class="uk-margin mb-3">
+                                       <label class="uk-form-label" for="form-horizontal-select">Select Company</label>
+                                       <div class="uk-form-controls">
+                                           <select class="uk-select" id="form-horizontal-select">
+                                               <option>Option 01</option>
+                                               <option>Option 02</option>
+                                           </select>
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="uk-width-1-2@s">
+                                   <div class="uk-margin mb-3">
+                                       <label class="uk-form-label" for="form-horizontal-select">Select Product</label>
+                                       <div class="uk-form-controls">
+                                           <select class="uk-select" id="form-horizontal-select">
+                                               <option>Option 01</option>
+                                               <option>Option 02</option>
+                                           </select>
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="uk-width-1-2@s">
+                                   <div class="uk-margin mb-3">
+                                       <label class="uk-form-label" for="form-horizontal-text">Email</label>
+                                       <div class="uk-form-controls">
+                                           <input class="uk-input" id="form-horizontal-text" type="email" placeholder="Enter email address...">
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="uk-width-1-2@s">
+                                   <div class="uk-margin mb-3">
+                                       <label class="uk-form-label" for="form-horizontal-text">Title for Review</label>
+                                       <div class="uk-form-controls">
+                                           <input class="uk-input" id="form-horizontal-text" type="text" placeholder="Address...">
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="uk-width-1-1">
+                                   <div class="uk-margin mb-3">
+                                       <label class="uk-form-label" for="form-horizontal-text">Rate us</label>
+                                       <div class="uk-form-controls">
+                                            <fieldset class="rating">
+                                       <input type="radio" id="star5" name="rating" value="5"/><label class="full"
+                                                                                                      for="star5"
+                                                                                                      title="Awesome - 5 stars"></label>
+                                       <input type="radio" id="star4" name="rating" value="4"/><label class="full"
+                                                                                                      for="star4"
+                                                                                                      title="Pretty good - 4 stars"></label>
+
+                                       <input type="radio" id="star3" name="rating" value="3"/><label class="full"
+                                                                                                      for="star3"
+                                                                                                      title="Meh - 3 stars"></label>
+
+                                       <input type="radio" id="star2" name="rating" value="2"/><label class="full"
+                                                                                                      for="star2"
+                                                                                                      title="Kinda bad - 2 stars"></label>
+
+                                       <input type="radio" id="star1" name="rating" value="1"/><label class="full"
+                                                                                                      for="star1"
+                                                                                                      title="Sucks big time - 1 star"></label>
+
+                                   </fieldset>
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="uk-width-1-1">
+                               <div class="uk-margin mb-3">
+                                   <textarea class="uk-textarea" rows="5" placeholder="Textarea"></textarea>
+                               </div>
+                               </div>
+
+                           </form>
+                            <hr>
+                       </div>
+                        <div class="review-container" >
+                            <h3 class="review-title">Reviews</h3>
+                            <article class="reviews">
+                                <figure class="user-image">
+                                    <img src="https://yt3.ggpht.com/-lASduCKYbGI/AAAAAAAAAAI/AAAAAAAAAAA/bCSffOUUASk/s48-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                                         alt="">
+                                </figure>
+                                <div class="review-right">
+                                    <span class="username"> Jhon Deo</span>&nbsp;<span
+                                            class="published">2018/2/9</span>&nbsp;&nbsp;<span>stars</span>
+                                    <p>lorem ipsum sumet is the inlu one that is very popular in webs
+                                        designing to
+                                        place
+                                        a dumy text</p>
+                                </div>
+                                <div class="clearfix"></div>
+                            </article>
+                            <article class="reviews">
+                                <figure class="user-image">
+                                    <img src="https://yt3.ggpht.com/-lASduCKYbGI/AAAAAAAAAAI/AAAAAAAAAAA/bCSffOUUASk/s48-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                                         alt="">
+                                </figure>
+                                <div class="review-right">
+                                    <span class="username"> Jhon Deo</span>&nbsp;<span
+                                            class="published">2018/2/9</span>&nbsp;&nbsp;<span>stars</span>
+                                    <p>lorem ipsum sumet is the inlu one that is very popular in webs
+                                        designing to
+                                        place
+                                        a dumy text</p>
+                                </div>
+                                <div class="clearfix"></div>
+                            </article>
+                            <article class="reviews">
+                                <figure class="user-image">
+                                    <img src="https://yt3.ggpht.com/-lASduCKYbGI/AAAAAAAAAAI/AAAAAAAAAAA/bCSffOUUASk/s48-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                                         alt="">
+                                </figure>
+                                <div class="review-right">
+                                    <span class="username"> Jhon Deo</span>&nbsp;<span
+                                            class="published">2018/2/9</span>&nbsp;&nbsp;<span>stars</span>
+                                    <p>lorem ipsum sumet is the inlu one that is very popular in webs
+                                        designing to
+                                        place
+                                        a dumy text</p>
+                                </div>
+                                <div class="clearfix"></div>
+                            </article>
+                            <article class="reviews">
+                                <figure class="user-image">
+                                    <img src="https://yt3.ggpht.com/-lASduCKYbGI/AAAAAAAAAAI/AAAAAAAAAAA/bCSffOUUASk/s48-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                                         alt="">
+                                </figure>
+                                <div class="review-right">
+                                    <span class="username"> Jhon Deo</span>&nbsp;<span
+                                            class="published">2018/2/9</span>&nbsp;&nbsp;<span>stars</span>
+                                    <p>lorem ipsum sumet is the inlu one that is very popular in webs
+                                        designing to
+                                        place
+                                        a dumy text</p>
+                                </div>
+                                <div class="clearfix"></div>
+                            </article>
+                            <article class="reviews">
+                                <figure class="user-image">
+                                    <img src="https://yt3.ggpht.com/-lASduCKYbGI/AAAAAAAAAAI/AAAAAAAAAAA/bCSffOUUASk/s48-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                                         alt="">
+                                </figure>
+                                <div class="review-right">
+                                    <span class="username"> Jhon Deo</span>&nbsp;<span
+                                            class="published">2018/2/9</span>&nbsp;&nbsp;<span>stars</span>
+                                    <p>lorem ipsum sumet is the inlu one that is very popular in webs
+                                        designing to
+                                        place
+                                        a dumy text</p>
+                                </div>
+                                <div class="clearfix"></div>
+                            </article>
+                            <article class="reviews">
+                                <figure class="user-image">
+                                    <img src="https://yt3.ggpht.com/-lASduCKYbGI/AAAAAAAAAAI/AAAAAAAAAAA/bCSffOUUASk/s48-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                                         alt="">
+                                </figure>
+                                <div class="review-right">
+                                    <span class="username"> Jhon Deo</span>&nbsp;<span
+                                            class="published">2018/2/9</span>&nbsp;&nbsp;<span>stars</span>
+                                    <p>lorem ipsum sumet is the inlu one that is very popular in webs
+                                        designing to
+                                        place
+                                        a dumy text</p>
+                                </div>
+                                <div class="clearfix"></div>
+                            </article>
+                            <article class="reviews">
+                                <figure class="user-image">
+                                    <img src="https://yt3.ggpht.com/-lASduCKYbGI/AAAAAAAAAAI/AAAAAAAAAAA/bCSffOUUASk/s48-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                                         alt="">
+                                </figure>
+                                <div class="review-right">
+                                    <span class="username"> Jhon Deo</span>&nbsp;<span
+                                            class="published">2018/2/9</span>&nbsp;&nbsp;<span>stars</span>
+                                    <p>lorem ipsum sumet is the inlu one that is very popular in webs
+                                        designing to
+                                        place
+                                        a dumy text</p>
+                                </div>
+                                <div class="clearfix"></div>
+                            </article>
+                            <article class="reviews">
+                                <figure class="user-image">
+                                    <img src="https://yt3.ggpht.com/-lASduCKYbGI/AAAAAAAAAAI/AAAAAAAAAAA/bCSffOUUASk/s48-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                                         alt="">
+                                </figure>
+                                <div class="review-right">
+                                    <span class="username"> Jhon Deo</span>&nbsp;<span
+                                            class="published">2018/2/9</span>&nbsp;&nbsp;<span>stars</span>
+                                    <p>lorem ipsum sumet is the inlu one that is very popular in webs
+                                        designing to
+                                        place
+                                        a dumy text</p>
+                                </div>
+                                <div class="clearfix"></div>
+                            </article>
+                            <article class="reviews">
+                                <figure class="user-image">
+                                    <img src="https://yt3.ggpht.com/-lASduCKYbGI/AAAAAAAAAAI/AAAAAAAAAAA/bCSffOUUASk/s48-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                                         alt="">
+                                </figure>
+                                <div class="review-right">
+                                    <span class="username"> Jhon Deo</span>&nbsp;<span
+                                            class="published">2018/2/9</span>&nbsp;&nbsp;<span>stars</span>
+                                    <p>lorem ipsum sumet is the inlu one that is very popular in webs
+                                        designing to
+                                        place
+                                        a dumy text</p>
+                                </div>
+                                <div class="clearfix"></div>
+                            </article>
+                            <article class="reviews">
+                                <figure class="user-image">
+                                    <img src="https://yt3.ggpht.com/-lASduCKYbGI/AAAAAAAAAAI/AAAAAAAAAAA/bCSffOUUASk/s48-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                                         alt="">
+                                </figure>
+                                <div class="review-right">
+                                    <span class="username"> Jhon Deo</span>&nbsp;<span
+                                            class="published">2018/2/9</span>&nbsp;&nbsp;<span>stars</span>
+                                    <p>lorem ipsum sumet is the inlu one that is very popular in webs
+                                        designing to
+                                        place
+                                        a dumy text</p>
+                                </div>
+                                <div class="clearfix"></div>
+                                <div class="clearfix"></div>
+                            </article>
+
+                            <button class="button-primary show-more d-block m-auto text-center"> show more</button>
+                            <div class="clearfix"></div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 right-section">
+                <div class="insurers pb-5" style="background:#fff">
+                    <div class="heading border-bottom">
+                        <h3 class="font-weight-bold p-3">
+                            Insurers
+                        </h3>
+                    </div>
+                    <ul style="list-style: circle; padding-left: 30px;">
+                        <li><a href="" class="d-block p-2 mb-1">company name</a></li>
+                        <li><a href="" class="d-block p-2 mb-1">company name</a></li>
+                        <li><a href="" class="d-block p-2 mb-1">company name</a></li>
+                        <li><a href="" class="d-block p-2 mb-1">company name</a></li>
+                        <li><a href="" class="d-block p-2 mb-1">company name</a></li>
+                        <li><a href="" class="d-block p-2 mb-1">company name</a></li>
+                        <li><a href="" class="d-block p-2 mb-1">company name</a></li>
+                        <li><a href="" class="d-block p-2 mb-1">company name</a></li>
+                        <li><a href="" class="d-block p-2 mb-1">company name</a></li>
+                    </ul>
+                </div>
+                <div class="banner my-3 bg-white">
+                    <figure><img src="images/LIC.png" alt=""></figure>
+                </div>
+                <div class="banner my-3 bg-white">
+                    <figure><img src="images/shikar.png" alt=""></figure>
+                </div>
+                <div class="banner my-3 bg-white">
+                    <figure><img src="images/nepallife.png" alt=""></figure>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-6 ">
+                <div class="footer_title">
+                        <h3>General Insurance</h3>
+                </div>
+                <div class="footer_list">
+                    <ul>
+                       <li class="footer_list--item"><a href="">Car Insurance</a></li>
+                       <li class="footer_list--item"><a href="">Health Insurance</a></li>
+                       <li class="footer_list--item"><a href="">Travel Insurance</a></li>
+                       <li class="footer_list--item"><a href="">Two-Wheeler Insurance</a></li>
+                       <li class="footer_list--item"><a href="">Third Party Car Insurance</a></li>
+                       <li class="footer_list--item"><a href="">Motor Insurance</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 ">
+                <div class="footer_title">
+                    <div class="heading">
+                        <h3>Life Insurance</h3>
+                    </div>
+                </div>
+                <div class="footer_list">
+                    <ul>
+                        <li class="footer_list--item"><a href="/">Term Insurance</a></li>
+                        <li class="footer_list--item"><a href="/">Spouse Term Plan</a></li>
+                        <li class="footer_list--item"><a href="/">Return of Premium</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class=" col-md-3 col-sm-6">
+                <div class="footer_title">
+                    <div class="heading">
+                        <h3>Investments</h3>
+                    </div>
+                </div>
+                <div class="footer_list">
+                    <ul>
+                        <li class="footer_list--item"><a href="/">Investment Plans</a></li>
+                        <li class="footer_list--item"><a href="/">Child Plans</a></li>
+                        <li class="footer_list--item"><a href="/">Pension Plans</a></li>
+                        <li class="footer_list--item"><a href="">ULIPs</a></li>
+                        <li class="footer_list--item"><a href="/">Money Back Policy</a></li>
+                        <li class="footer_list--item"><a href="/">Endowment Policy</a></li>
+                        <li class="footer_list--item"><a href="/">Guaranteed Return Plans</a></li>
+                        <li class="footer_list--item"><a href="/">Tax Saving Plans</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class=" col-md-3 col-sm-6">
+                <div class="footer_title">
+                    <div class="heading">
+                        <h3>Department</h3>
+                    </div>
+                </div>
+                <div class="footer_list">
+                    <ul>
+                         <li class="footer_list--item"><a href="">Group Mediclaim</a></li>
+                         <li class="footer_list--item"><a href="">Corporate Insurance</a></li>
+                         <li class="footer_list--item"><a href="">Cancer Insurance</a></li>
+                         <li class="footer_list--item"><a href="">Home Insurance</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="social_icons">
+            <ul class="d-flex align-items-center justify-content-between ">
+                <li><div class="heading">
+                        <h3>Follow Us</h3>
+                    </div>
+                </li>
+
+                <li class=" "><a href=""> <span   uk-icon="facebook" class="facebook"></span><span>facebook</span> </a></li>
+               <li class=" "><a href=""> <span   uk-icon="google-plus" class="google-plus"></span><span>google plus</span></a></li>
+               <li class=" "><a href=""> <span   uk-icon="twitter" class="twitter"></span><span>twitter</span></a></li>
+               <li class=" "><a href=""> <span   uk-icon="instagram" class="instagram"></span><span>instagram</span></a></li>
+               <li class=" "><a href=""> <span   uk-icon="youtube" class="youtube"></span><span>youtube</span></a></li>
+               <li class=" "><a href=""> <span   uk-icon="tumblr" class="tumblr"></span><span>tumblr</span></a></li>
+               <li class=" "><a href=""> <span   uk-icon="pinterest" class="pinterest"></span><span>pinterest</span></a></li>
+
+            </ul>
+        </div>
+
+    </div>
+
+
+</footer>
+<footer id="mini-footer">
+    <p>Powered by <a href="" style="color: #ff6268"> Next Nepal</a></p>
+</footer>
+<!-- login-modal -->
+<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="login-modal" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title" id="login-modal">Login Now</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+             <div class="row align-items-center">
+                 <div class="col-sm-6">
+                     <div class="login-img">
+                     <figure><img src="images/login.svg" alt=""></figure>
+                     </div>
+                 </div>
+                 <div class="col-sm-6">
+                     <div class="login-form">
+                         <form action="">
+                             <div class="login-first--page">
+
+                                 <div class="uk-margin">
+                                     <div class="uk-inline w-100  shadow-sm">
+                                         <span class="uk-form-icon " uk-icon="icon:world"></span>
+                                         <select class="uk-select pl-5  uk-form-large" >
+                                             <option value="">Select Your Country</option>
+                                             <option value="">Nepal</option>
+                                             <option value="">China</option>
+                                             <option value="">USA</option>
+                                         </select>
+                                     </div>
+                                 </div>
+                                 <div class="uk-margin">
+                                     <div class="uk-inline w-100   shadow-sm">
+                                         <span class="uk-form-icon" uk-icon="icon: receiver"></span>
+                                         <input class="uk-input uk-form-large pl-5" type="number" placeholder="Mobile number">
+                                     </div>
+                                 </div>
+                                 <div class="uk-margin d-block ">
+                                     <div class="button-primary text-center w-50 mx-auto" id="login-first">
+                                         Proceed
+                                     </div>
+                                 </div>
+                             </div>
+                             <div class="login-second--page" style="display: none">
+                                 <div class="uk-margin">
+                                     <div class="uk-inline w-100   shadow-sm">
+                                         <span class="uk-form-icon" uk-icon="icon: user"></span>
+                                         <input class="uk-input uk-form-large pl-5" type="text" placeholder="Full Name">
+                                     </div>
+                                 </div>
+                                 <div class="uk-margin">
+                                     <div class="uk-inline w-100   shadow-sm">
+                                         <span class="uk-form-icon" uk-icon="icon: mail"></span>
+                                         <input class="uk-input uk-form-large pl-5" type="email" placeholder="Email">
+                                     </div>
+                                 </div>
+                                 <div class="uk-margin">
+                                     <div class="uk-inline w-100   shadow-sm">
+                                         <span class="uk-form-icon" uk-icon="icon: location"></span>
+                                         <input class="uk-input uk-form-large pl-5" type="text" placeholder="Address">
+                                     </div>
+                                 </div>
+                                 <div class="uk-margin">
+                                     <a class="button-primary w-50 text-center mx-auto" href="dashboard.html" id="login-first">
+                                         Sumbit
+                                     </a>
+                                 </div>
+                             </div>
+
+                         </form>
+                     </div>
+                 </div>
+             </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+<!-- datepicker bootstrap -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
+<!-- inputmask js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.1.62/jquery.inputmask.bundle.min.js"></script>
+<!-- UIkit JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.16/js/uikit.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.16/js/uikit-icons.min.js"></script>
+<!-- metis menu -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/metisMenu/2.7.8/metisMenu.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+
+
+<script src="js/app.min.js"></script>
+
+</body>
+</html>

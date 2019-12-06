@@ -1,0 +1,129 @@
+{% include 'dash-top.njk' %}
+
+
+    {% include 'header.njk' %}
+
+    <section id="renew-section" class="light-bg py-5 border-top">
+        <div class="container">
+            <div class="row  bg-white shadow p-3 renew-first-row">
+                <div class="col-sm-6 ">
+                    <div class="renew-info">
+                        <div class="sub-heading p-2 border-bottom mb-3">
+                            <h3><strong>Renew Life Insurance Policy
+                                    </strong></h3>
+                            <h4>Pay renewal premium and get security & peace of mind</h4>
+                        </div>
+                        <ul>
+                            <li class="d-block p-2"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, ipsam.</p></li>
+                            <li class="d-block p-2"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, ipsam.</p></li>
+                            <li class="d-block p-2"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, ipsam.</p></li>
+                            <li class="d-block p-2"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, ipsam.</p></li>
+                            <li class="d-block p-2"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, ipsam.</p></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="renew-companies">
+                        <div class="sub-heading p-2 mb-3">
+                            <h3><strong>Select Your Insurance Company</strong></h3>
+                        </div>
+                        <div class="renew-form border mx-auto text-center shadow-sm p-4">
+                            <form action="">
+                                <label data-toggle="tooltip" data-placement="bottom" title="himalayan insurance">
+                                    <input type="radio" name="test" value="himalayan" checked>
+                                    <img src="images/himalayan.jpg" >
+                                </label>
+
+                                <label data-toggle="tooltip" data-placement="bottom" title="nepal Insurance">
+                                    <input type="radio" name="test" value="nepali">
+                                    <img src="images/nepali.jpg">
+                                </label>
+                                <label data-toggle="tooltip" data-placement="bottom" title="LIC">
+                                    <input type="radio" name="test" value="LIC">
+                                    <img src="images/LIC.png">
+                                </label>
+                                <label data-toggle="tooltip" data-placement="bottom" title="Shikar Insurance">
+                                    <input type="radio" name="test" value="Shikar">
+                                    <img src="images/shikar.png">
+                                </label>
+                                <label data-toggle="tooltip" data-placement="bottom" title="Honda Insurance">
+                                    <input type="radio" name="test" value="Honda">
+                                    <img src="images/honda.jpg">
+                                </label>
+                                <label data-toggle="tooltip" data-placement="bottom" title="Nepal Life Insurance">
+                                    <input type="radio" name="test" value="nepallife">
+                                    <img src="images/nepallife.png">
+                                </label>
+                                <label data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">
+                                    <input type="radio" name="test" value="iPay-Nepal">
+                                    <img src="images/cellpay.png">
+                                </label>
+                                <label >
+                                    <span class="d-none">
+                                        dummy
+                                    </span>
+                                </label>
+
+                                <div class=" my-3">
+                                    <div class="button-primary text-center w-50 mx-auto" id="row-next-page">
+                                        Proceed
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row renew-second-row " style="display: none">
+                <div class="col-md-6 offset-md-3 shadow bg-white">
+                    <div class="renew-company py-5 ">
+                        <div class="sub-heading p-2 mb-3 border-bottom text-center">
+                            <h3><strong>Life Insurance Corporation Nepal Pvt. Ltd</strong></h3>
+                            <figure >
+                                <img src="images/LIC.png" alt="">
+                            </figure>
+
+                        </div>
+                        <form class="uk-form-stacked">
+
+                            <div class="uk-margin">
+                                <label class="uk-form-label" for="form-stacked-Policy-no"><strong>Policy No.</strong></label>
+                                <div class="uk-form-controls">
+                                    <div class="uk-inline w-100   shadow-sm">
+                                        <span class="uk-form-icon" uk-icon="icon:file-edit"></span>
+                                        <input class="uk-input uk-form-large pl-5" id="form-stacked-Policy-no" type="text" placeholder="Policy Number">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="uk-margin">
+                                <label class="uk-form-label" for="form-stacked-Policy-no"><strong>Date Of Birth (D.O.B)</strong></label>
+                                <div class="uk-form-controls">
+                                    <div class="uk-inline w-100  border shadow-sm">
+                                        <span class="uk-form-icon" uk-icon="icon:calendar"></span>
+                                        <div class="input-group date-picker date" data-date-format="mm-dd-yyyy">
+                                            <input class="uk-input uk-form-large pl-5" type="text" readonly
+                                                   style="border:none; background:none; outline:none">
+                                            <span class="add-on pt-2 d-none"> <i class="icofont-edit-alt"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="uk-margin ">
+                              <a  href="one-step-checkout.html" class="button-primary w-50 text-center mx-auto">
+                                  Get Premium
+                              </a>
+                            </div>
+
+                        </form>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    {% include 'footer.njk' %}
+
+{% include 'dash-bottom.njk' %}

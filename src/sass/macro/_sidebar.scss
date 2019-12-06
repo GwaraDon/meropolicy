@@ -1,0 +1,19 @@
+.sidebar{
+  .sidebar-ul > li{
+    border-bottom:1px solid transparent!important;
+    a{
+      font-weight: bold;
+      &:hover, &.active{
+        border-left: 2px solid $secondary;
+      }
+      i{
+        font-size: 24px;
+      }
+    }
+  }
+}
+.user-profile-edit{
+  .uk-inline > span{
+    font-size: 18px;
+  }
+}

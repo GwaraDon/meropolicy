@@ -1,0 +1,916 @@
+<section id="company_list">
+    <div class="company_list py-5">
+        <div class="sticky">
+            <div class="container">
+                <div class="stick-to-top">
+                    <!-- first row is for the filter of the car -->
+                    <div class="row align-items-center light-bg ">
+                        <div class="col-sm-5 br-1">
+                            <div class="details-edit-section  d-flex align-items-center flex-wrap  justify-content-between p-3">
+                                <div class="details-section mr-2">
+                                    <div class="name">
+                                        HYUNDAI i 20 1.2 ASTA (O) WITH SUNROOF1197
+                                    </div>
+                                    <div class="other-details">
+                                        <span>Private Car</span>
+                                        <span>2013</span>
+                                        <span>Petrol</span>
+                                        <span> Kathmandu</span>
+                                    </div>
+                                </div>
+                                <button class="edit-details-button  btn " data-toggle="modal"
+                                        data-target="#edit_vehicle">
+                                    Edit
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 br-1">
+                            <div class="ncb-edit-section  d-flex flex-wrap  align-items-center p-3">
+                                <div>NCB<span data-toggle="tooltip" data-placement="bottom"
+                                              title="No Claim Bonus (NCB) is a discount offered by insurance companies to reward a vehicle owner who has not made a claim in the previous policy. NCB moves in fixed slabs of 0%, 20%, 25%, 35%, 45% and 50% and it jumps to a higher slab every subsequent year without claim. When a claim is made, NCB is reset to 0%.">
+                                 <span class="wrapper border rounded-circle py-1 px-2  text-success "
+                                       style="cursor:pointer">i</span>&nbsp;
+                                </span>assumed to be:<a class="edit-ncb-button position-relative" data-toggle="modal"
+                                                        data-target="#NCB_value">0%</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 ">
+                            <div class="policy-expiry-edit-section  d-flex flex-wrap align-items-center p-3">
+                                Existing Policy Expiry Date: <a class="edit-expiry-button position-relative"
+                                                                data-toggle="modal"
+                                                                data-target="#existing_policy">20-Nov-2019</a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- second row is for change of the details-->
+                    <div class="row align-items-center light-bg mt-2 ">
+                        <div class="col-sm-8">
+                            <div class="d-flex align-items-center justify-content-between flex-wrap w-100 pt-2 pb-1">
+                                <div class="insurer-modal flex-fill br-1 mr-3">
+                                    <label class=" pointer " data-toggle="modal" data-target="#edit_insurers">
+                                        Insurers
+                                        <span data-toggle="tooltip" data-placement="bottom"
+                                              title="Filter plans by insurers of your choice.">
+                                            <span class="wrapper border rounded-circle py-1 px-2  text-success "
+                                                  style="cursor:pointer">i</span>&nbsp;
+                                      </span>
+                                    </label>
+                                </div>
+                                <div class="idv-dropdown flex-fill">
+                                    <div class="idv-modal br-1   mr-3">
+                                        <label class=" pointer">
+                                            Insured Value ( IDV)
+                                            <span data-toggle="tooltip" data-placement="bottom"
+                                                  title="Insured Declared Value (IDV) is the maximum amount your insurer can provide you in case your car is stolen or totally damaged subject to IDV guidelines.">
+                                            <span class="wrapper border rounded-circle py-1 px-2  text-success "
+                                                  style="cursor:pointer">i</span>&nbsp;
+                                      </span>
+                                        </label>
+                                        <span class="pointer px-2 font-weight-bold "
+                                              style=" border-bottom: 2px solid #333"
+                                              data-toggle="modal" data-target="#edit_idv">Select your IDV</span>
+
+                                    </div>
+                                </div>
+                                <div class="plan-type-dropdown flex-fill">
+                                    <div class="plan_type-modal ">
+                                        <label class=" pointer">
+                                            Plan Type
+                                            <span data-toggle="tooltip" data-placement="bottom"
+                                                  title="Filter plans by different types of insurance policies.">
+                                            <span class="wrapper border rounded-circle py-1 px-2  text-success "
+                                                  style="cursor:pointer">i</span>&nbsp;
+                                      </span>
+                                        </label>
+                                        <span class="pointer px-2 font-weight-bold "
+                                              style=" border-bottom: 2px solid #333"
+                                              data-toggle="modal" data-target="#edit_plan">Select your plan</span>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="addons-btn">
+                                <label class=" pointer" data-toggle="modal" data-target="#addons-btn">
+                                    Select Addons &amp; Accessories
+                                    <span data-toggle="tooltip" data-placement="bottom"
+                                          title="Additional covers which you may add in your policy for better financial
+                                            protection of your car or the individuals
+                                            traveling in your car.">
+                                            <span class="wrapper border rounded-circle py-1 px-2  text-success "
+                                                  style="cursor:pointer">i</span>&nbsp;
+                                      </span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- third row for the list of the company -->
+        <div class="container">
+            <div class="row mt-2">
+                <!-- col-8 column is for the company list -->
+                <div class="col-md-8 px-0 ">
+                    <div class="list-of-plans my-5">
+                        <div class="quote-tile  mb-3">
+                            <div class="quote-tile-inner shadow-sm d-flex justify-content-between align-items-center py-2">
+                                <div data-toggle="tooltip" data-placement="right" title="click here to compare">
+                                    <input type="checkbox" class="uk-checkbox">
+                                </div>
+                                <div class="logo-image br-1">
+                                    <img class="" src="images/29.png" alt="">
+                                </div>
+                                <div class="show-idv-section br-1">
+                                    <label>IDV</label>
+                                    <span><span>Rs</span> 1,97,846</span>
+                                </div>
+                                <div class="addons-section br-1">
+                                    <div class="quotes-zerodep-section">
+                                        <div class="zeroDep">
+                                            <div>
+                                                <div>Addons</div>
+                                                <span><!-- react-text: 3726 -->Zero Dep: <!-- /react-text --><span>Unavailable</span></span>
+                                                <div class="selected-addons">
+                                                    <ul class="included-addons"></ul>
+                                                </div>
+                                            </div>
+                                        </div><!-- react-text: 3730 --><!-- /react-text --><!-- react-text: 3731 -->
+                                        <!-- /react-text --></div>
+                                </div>
+                                <div class="buy-now-section br-1">
+                                    <div class="">
+                                        <div class="line-through">9,851</div>
+                                        <div>
+                                            <a href="buy-car-insurance.html" class="buy-now-btn">4,842</a>
+                                        </div>
+                                        <div>
+                                            <a class="breakup-link">Breakup</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="quote-tile  mb-3">
+                            <div class="quote-tile-inner shadow-sm d-flex justify-content-between align-items-center py-2">
+                                <div data-toggle="tooltip" data-placement="right" title="click here to compare"><input
+                                            type="checkbox" class="uk-checkbox"></div>
+
+                                <div class="logo-image br-1">
+                                    <img class="" src="images/29.png" alt="">
+                                </div>
+                                <div class="show-idv-section br-1">
+                                    <label>IDV</label>
+                                    <span><span>Rs</span> 1,97,846</span>
+                                </div>
+                                <div class="addons-section br-1">
+                                    <div class="quotes-zerodep-section">
+                                        <div class="zeroDep">
+                                            <div>
+                                                <div>Addons</div>
+                                                <span><!-- react-text: 3726 -->Zero Dep: <!-- /react-text --><span>Unavailable</span></span>
+                                                <div class="selected-addons">
+                                                    <ul class="included-addons"></ul>
+                                                </div>
+                                            </div>
+                                        </div><!-- react-text: 3730 --><!-- /react-text --><!-- react-text: 3731 -->
+                                        <!-- /react-text --></div>
+                                </div>
+                                <div class="buy-now-section br-1">
+                                    <div class="">
+                                        <div class="line-through">9,851</div>
+                                        <a href="buy-car-insurance.html" class="buy-now-btn">4,842</a>
+                                        <div>
+                                            <a class="breakup-link">Breakup</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="quote-tile  mb-3">
+                            <div class="quote-tile-inner shadow-sm d-flex justify-content-between align-items-center py-2">
+                                <div data-toggle="tooltip" data-placement="right" title="click here to compare"><input
+                                            type="checkbox" class="uk-checkbox"></div>
+
+                                <div class="logo-image br-1">
+                                    <img class="" src="images/29.png" alt="">
+                                </div>
+                                <div class="show-idv-section br-1">
+                                    <label>IDV</label>
+                                    <span><span>Rs</span> 1,97,846</span>
+                                </div>
+                                <div class="addons-section br-1">
+                                    <div class="quotes-zerodep-section">
+                                        <div class="zeroDep">
+                                            <div>
+                                                <div>Addons</div>
+                                                <span><!-- react-text: 3726 -->Zero Dep: <!-- /react-text --><span>Unavailable</span></span>
+                                                <div class="selected-addons">
+                                                    <ul class="included-addons"></ul>
+                                                </div>
+                                            </div>
+                                        </div><!-- react-text: 3730 --><!-- /react-text --><!-- react-text: 3731 -->
+                                        <!-- /react-text --></div>
+                                </div>
+                                <div class="buy-now-section br-1">
+                                    <div class="">
+                                        <div class="line-through">9,851</div>
+                                        <a href="buy-car-insurance.html" class="buy-now-btn">4,842</a>
+                                        <div>
+                                            <a class="breakup-link">Breakup</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="quote-tile  mb-3">
+                            <div class="quote-tile-inner shadow-sm d-flex justify-content-between align-items-center py-2">
+                                <div data-toggle="tooltip" data-placement="right" title="click here to compare"><input
+                                            type="checkbox" class="uk-checkbox"></div>
+
+                                <div class="logo-image br-1">
+                                    <img class="" src="images/29.png" alt="">
+                                </div>
+                                <div class="show-idv-section br-1">
+                                    <label>IDV</label>
+                                    <span><span>Rs</span> 1,97,846</span>
+                                </div>
+                                <div class="addons-section br-1">
+                                    <div class="quotes-zerodep-section">
+                                        <div class="zeroDep">
+                                            <div>
+                                                <div>Addons</div>
+                                                <span><!-- react-text: 3726 -->Zero Dep: <!-- /react-text --><span>Unavailable</span></span>
+                                                <div class="selected-addons">
+                                                    <ul class="included-addons"></ul>
+                                                </div>
+                                            </div>
+                                        </div><!-- react-text: 3730 --><!-- /react-text --><!-- react-text: 3731 -->
+                                        <!-- /react-text --></div>
+                                </div>
+                                <div class="buy-now-section br-1">
+                                    <div class="">
+                                        <div class="line-through">9,851</div>
+                                        <button class="buy-now-btn">4,842</button>
+                                        <div>
+                                            <a class="breakup-link">Breakup</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="quote-tile  mb-3">
+                            <div class="quote-tile-inner shadow-sm d-flex justify-content-between align-items-center py-2">
+                                <div data-toggle="tooltip" data-placement="right" title="click here to compare"><input
+                                            type="checkbox" class="uk-checkbox"></div>
+
+                                <div class="logo-image br-1">
+                                    <img class="" src="images/29.png" alt="">
+                                </div>
+                                <div class="show-idv-section br-1">
+                                    <label>IDV</label>
+                                    <span><span>Rs</span> 1,97,846</span>
+                                </div>
+                                <div class="addons-section br-1">
+                                    <div class="quotes-zerodep-section">
+                                        <div class="zeroDep">
+                                            <div>
+                                                <div>Addons</div>
+                                                <span><!-- react-text: 3726 -->Zero Dep: <!-- /react-text --><span>Unavailable</span></span>
+                                                <div class="selected-addons">
+                                                    <ul class="included-addons"></ul>
+                                                </div>
+                                            </div>
+                                        </div><!-- react-text: 3730 --><!-- /react-text --><!-- react-text: 3731 -->
+                                        <!-- /react-text --></div>
+                                </div>
+                                <div class="buy-now-section br-1">
+                                    <div class="">
+                                        <div class="line-through">9,851</div>
+                                        <button class="buy-now-btn">4,842</button>
+                                        <div>
+                                            <a class="breakup-link">Breakup</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="quote-tile  mb-3">
+                            <div class="quote-tile-inner shadow-sm d-flex justify-content-between align-items-center py-2">
+                                <div data-toggle="tooltip" data-placement="right" title="click here to compare"><input
+                                            type="checkbox" class="uk-checkbox"></div>
+
+                                <div class="logo-image br-1">
+                                    <img class="" src="images/29.png" alt="">
+                                </div>
+                                <div class="show-idv-section br-1">
+                                    <label>IDV</label>
+                                    <span><span>Rs</span> 1,97,846</span>
+                                </div>
+                                <div class="addons-section br-1">
+                                    <div class="quotes-zerodep-section">
+                                        <div class="zeroDep">
+                                            <div>
+                                                <div>Addons</div>
+                                                <span><!-- react-text: 3726 -->Zero Dep: <!-- /react-text --><span>Unavailable</span></span>
+                                                <div class="selected-addons">
+                                                    <ul class="included-addons"></ul>
+                                                </div>
+                                            </div>
+                                        </div><!-- react-text: 3730 --><!-- /react-text --><!-- react-text: 3731 -->
+                                        <!-- /react-text --></div>
+                                </div>
+                                <div class="buy-now-section br-1">
+                                    <div class="">
+                                        <div class="line-through">9,851</div>
+                                        <button class="buy-now-btn">4,842</button>
+                                        <div>
+                                            <a class="breakup-link">Breakup</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="quote-tile  mb-3">
+                            <div class="quote-tile-inner shadow-sm d-flex justify-content-between align-items-center py-2">
+                                <div data-toggle="tooltip" data-placement="right" title="click here to compare"><input
+                                            type="checkbox" class="uk-checkbox"></div>
+
+                                <div class="logo-image br-1">
+                                    <img class="" src="images/29.png" alt="">
+                                </div>
+                                <div class="show-idv-section br-1">
+                                    <label>IDV</label>
+                                    <span><span>Rs</span> 1,97,846</span>
+                                </div>
+                                <div class="addons-section br-1">
+                                    <div class="quotes-zerodep-section">
+                                        <div class="zeroDep">
+                                            <div>
+                                                <div>Addons</div>
+                                                <span><!-- react-text: 3726 -->Zero Dep: <!-- /react-text --><span>Unavailable</span></span>
+                                                <div class="selected-addons">
+                                                    <ul class="included-addons"></ul>
+                                                </div>
+                                            </div>
+                                        </div><!-- react-text: 3730 --><!-- /react-text --><!-- react-text: 3731 -->
+                                        <!-- /react-text --></div>
+                                </div>
+                                <div class="buy-now-section br-1">
+                                    <div class="">
+                                        <div class="line-through">9,851</div>
+                                        <button class="buy-now-btn">4,842</button>
+                                        <div>
+                                            <a class="breakup-link">Breakup</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- col-4 is for the chat box  -->
+                <div class="col-md-4">
+                    <figure class="border p-3 " style="height: 380px;">
+                        <img src="images/chat.svg" alt="" style=" height: 100%;">
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal for the edit vehicle details -->
+    <div class="modal fade" id="edit_vehicle" tabindex="-1" role="dialog" aria-labelledby="edit_vehicle"
+         aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="car-details ">
+                            <div class="vehical-name">HYUNDAI i 20 1.2 ASTA (O) WITH SUNROOF(1197 cc)</div>
+                            <div><span>DL1 NORTH DELHI </span></div>
+                        </div>
+                        <button class="change-detail-btn button-primary-outline ">Change</button>
+                    </div>
+
+                    <div class="details-section"><label>Vehical Type</label>
+                        <div class="detail">
+                            <button class="btn-private button-primary-outline rounded ">Private</button>
+                            <button class=" btn-commercial button-primary-outline rounded">Commercial</button>
+                        </div>
+                    </div>
+                    <div class="details-section"><label>Fuel Type/Variant</label>
+                        <div class="detail">
+                            <div class="default-detail-view">
+                                <div class="detail-view d-flex flex-wrap align-items-center ">
+                                    <p class="detail-view-text">Petrol - 1.2 ASTA (O) WITH SUNROOF
+                                        (1197 cc)</p>
+                                    <form action="" style="display: none" class="edit-detail-view-text">
+                                        <select name="" class="pointer">
+                                            <option value="">petrol</option>
+                                            <option value="">Desiel</option>
+                                            <option value="">CNC</option>
+                                        </select>
+                                    </form>
+                                    <span class="edit-icon ml-3 font-weight-bold pointer p-2"><i
+                                                class="icofont-edit-alt"></i> </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="details-section"><label>Registration Date</label>
+                        <div class="detail">
+                            <div class="detail-date">
+                                <div id="" class="input-group date-picker date" data-date-format="mm-dd-yyyy">
+                                    <input class="" type="text" readonly
+                                           style="border:none; background:none">
+                                    <span class="add-on pt-2"> <i class="icofont-edit-alt"></i></span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn rounded" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn rounded">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of the vechile detail modal -->
+
+    <!-- modal for the editing NCB value -->
+    <div class="modal fade" id="NCB_value" tabindex="-1" role="dialog" aria-labelledby="NCB_value"
+         aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="">
+                        <div class="mb-3"><b>Did you make a claim in your existing policy?</b></div>
+                        <div class="clam-yes-no">
+                            <button class="claim-yes-button button-primary-outline rounded ">Yes</button>
+                            <button class="claim-no-button button-primary-outline rounded">No</button>
+                        </div>
+                        <div class="claim-content p-3 border mt-3">
+                            <div class="claim-made-yes-alert ">
+                                <b>Since you've made a claim in your existing policy, your NCB will be reset to 0%</b>
+                            </div>
+                            <div class="claim-made-no-alert" style="display: none">
+                                <div><b>Select your existing No Claim Bonus (NCB) </b></div>
+                                <div class="ncb-options">
+                                    <button class="ncb-option btn btn-sm btn-outline-success ">0</button>
+                                    <button class="ncb-option btn btn-sm btn-outline-success selected-ncb">20</button>
+                                    <button class="ncb-option btn btn-sm btn-outline-success ">25</button>
+                                    <button class="ncb-option btn btn-sm btn-outline-success ">35</button>
+                                    <button class="ncb-option btn btn-sm btn-outline-success ">45</button>
+                                    <button class="ncb-option btn btn-sm btn-outline-success ">50</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn rounded-pill" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn rounded-pill">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of the ncb value -->
+
+    <!-- modal for Existing Policy -->
+    <div class="modal fade" id="existing_policy" tabindex="-1" role="dialog" aria-labelledby="existing_policy"
+         aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div>
+                        <div class="py-2">
+                            <label>Existing Policy Type</label>
+                            <div class="py-2 buttons">
+                                <button class="button-primary-outline selected ">Comprehensive/Package</button>
+                                <button class="button-primary-outline ">Third Party</button>
+                            </div>
+                        </div>
+                        <div class="d-flex  align-items-center justify-content-between py-2">
+                            <label>Existing Insurer</label>
+                            <form action="">
+                                <select name="" id="" style="
+                                                        border: none;
+                                                        border-bottom: 2px solid;
+                                                        outline: none;
+                                                        padding: 10px 0;
+                                                    ">
+                                    <option class="py-2" value=""><b>Select Existing Insurer</b></option>
+                                    <option class="py-2" value="">2</option>
+                                    <option class="py-2" value="">3</option>
+                                    <option class="py-2" value="">4</option>
+                                </select>
+                            </form>
+                            <a> </a>
+                        </div>
+                        <div class="d-flex  align-items-center justify-content-between py-2">
+                            <label>Policy Expiry Date</label>
+                            <div>
+                                <div class="input-group date-picker date" data-date-format="mm-dd-yyyy">
+                                    <input class="" type="text" readonly
+                                           style="border:none; background:none; outline:none">
+                                    <span class="add-on pt-2"> <i class="icofont-edit-alt"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex  align-items-center justify-content-between py-2">
+                            <label>Registration Date</label>
+                            <div>
+                                <div class="input-group date-picker date" data-date-format="mm-dd-yyyy">
+                                    <input class="" type="text" readonly
+                                           style="border:none; background:none; outline:none">
+                                    <span class="add-on pt-2"> <i class="icofont-edit-alt"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex  align-items-center justify-content-between py-2">
+                            <label>Manufacturing Date</label>
+                            <div>
+                                <div class="input-group date-picker date" data-date-format="mm-dd-yyyy">
+                                    <input class="" type="text" readonly
+                                           style="border:none; background:none; outline:none">
+                                    <span class="add-on pt-2"> <i class="icofont-edit-alt"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn rounded-pill" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn rounded-pill">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of the existing policy -->
+
+    <!-- modal for the edit insurers -->
+    <div class="modal fade" id="edit_insurers" tabindex="-1" role="dialog" aria-labelledby="edit_insurers"
+         aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class=" p-3">
+                        <div class="d-flex align-items-center justify-content-between">
+
+                            <label class=" pointer" data-toggle="dropdown" aria-haspopup="true"
+                                   aria-expanded="false">
+                                Insurers
+                                <span data-toggle="tooltip" data-placement="bottom"
+                                      title="Filter plans by insurers of your choice.">
+                                            <span class="wrapper border rounded-circle py-1 px-2  text-success "
+                                                  style="cursor:pointer">i</span>&nbsp;
+                                      </span>
+                            </label>
+                        </div>
+                        <div class="dropdown-divider" style="border-top:2px solid #e9ecef; "></div>
+
+                        <div class="insurer d-flex justify-content-between align-items-center">
+                            <label for="select-all"> <input type="checkbox" class="insurer-checkbox uk-checkbox"
+                                                            id="select-all" value="on">
+                                Select All</label>
+                            <span class="font-weight-bold pointer" id="reset-all">
+                                Reset All</span>
+                        </div>
+                        <div class="insurer">
+                            <label for="Bajaj Allianz_0"> <input type="checkbox" class="insurer-checkbox uk-checkbox"
+                                                                 id="Bajaj Allianz_0" value="on">
+                                Bajaj Allianz</label>
+                        </div>
+                        <div class="insurer">
+                            <label for="Bharti Axa_1"> <input type="checkbox" class="insurer-checkbox uk-checkbox"
+                                                              id="Bharti Axa_1" value="on">
+                                Bharti Axa</label>
+                        </div>
+                        <div class="insurer">
+                            <label for="Edelweiss General Insurance_2"> <input type="checkbox"
+                                                                               class="insurer-checkbox uk-checkbox"
+                                                                               id="Edelweiss General Insurance_2"
+                                                                               value="on">
+                                Edelweiss General
+                                Insurance</label>
+                        </div>
+                        <div class="insurer">
+                            <input type="checkbox" class="insurer-checkbox uk-checkbox" id="Future Generali_3"
+                                   value="on">
+                            <label for="Future Generali_3">Future Generali</label>
+                        </div>
+                        <div class="insurer">
+                            <input type="checkbox" class="insurer-checkbox uk-checkbox" id="HDFC ERGO_4" value="on">
+                            <label for="HDFC ERGO_4">HDFC ERGO</label>
+                        </div>
+                        <div class="dropdown-divider" style="border-top:2px solid #e9ecef; "></div>
+                        <div class="plans-not-received-insurers">We did not
+                            receive quotes for your car from 4
+                            other insurer(s)
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn rounded" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn rounded">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of the modal of insurers -->
+
+    <!-- modal fot the edit IDV  -->
+    <div class="modal fade" id="edit_idv" tabindex="-1" role="dialog" aria-labelledby="edit_idv"
+         aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class=" p-3">
+                        <div class="d-flex align-items-center justify-content-between">
+
+                            <label class=" pointer">
+                                Insured Value ( IDV)
+                                <span data-toggle="tooltip" data-placement="bottom"
+                                      title="Filter plans by insurers of your choice.">
+                                            <span class="wrapper border rounded-circle py-1 px-2  text-success "
+                                                  style="cursor:pointer">i</span>&nbsp;
+                                      </span>
+                            </label>
+                            <div id="clear_all-insurer " class="p-2 border pointer" data-dismiss="modal">
+                                Close
+                            </div>
+                        </div>
+                        <div class="dropdown-divider" style="border-top:2px solid #e9ecef; "></div>
+                        <div class="">
+                            <h3 class="py-3">Set By</h3>
+                            <div class="options">
+                                <div class="option selected">
+                                    <input type="radio" class="uk-radio" id="radio_lowest" name="radio1" value="lowest">
+                                    <label for="radio_lowest">Lowest IDV Value</label>
+                                </div>
+                                <div class="option">
+                                    <input type="radio" class="uk-radio" id="radio_highest" name="radio1"
+                                           value="highest">
+                                    <label for="radio_highest">Max IDV Value</label>
+                                </div>
+                                <div class="option">
+                                    <input type="radio" class="uk-radio" id="radio_user_defined" name="radio1"
+                                           value="user_defined">
+                                    <label for="radio_user_defined">Choose Your IDV</label>
+                                    <span class="border-bottom font-weight-bold" id="rangeValue">1000</span>
+                                    <input id="range" class="uk-range uk-width-2-3" type="range" style="display: none"
+                                           value="2" min="1000" max="10000" step="1"
+                                           oninput="document.getElementById('rangeValue').innerHTML = this.value">
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn rounded" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn rounded">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of the modal of IDV -->
+
+    <!-- modal fot the edit plan  -->
+    <div class="modal fade" id="edit_plan" tabindex="-1" role="dialog" aria-labelledby="edit_plan"
+         aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class=" p-3">
+                        <div class="d-flex align-items-center justify-content-between">
+
+                            <label class=" pointer">
+                                Select your plan
+                                <span data-toggle="tooltip" data-placement="bottom"
+                                      title="Filter plans by insurers of your choice.">
+                                            <span class="wrapper border rounded-circle py-1 px-2  text-success "
+                                                  style="cursor:pointer">i</span>&nbsp;
+                                      </span>
+                            </label>
+                            <div id="clear_all-insurer " class="p-2 border pointer">
+                                Close
+                            </div>
+                        </div>
+                        <div class="dropdown-divider" style="border-top:2px solid #e9ecef; "></div>
+                        <div class="">
+                            <div class="options ">
+                                <div class="option border pointer selected text-center d-block my-2">
+                                    <h4 class="font-weght-bold"><a href="">All Plan</a></h4>
+                                    <div class="text-muted">
+                                    </div>
+                                </div>
+                                <div class="option border pointer text-center d-block my-2">
+                                    <h4 class="font-weght-bold"><a href="">Comprehensive/Standard</a></h4>
+                                    <div class="text-muted">
+                                        covers damage to your car and third party
+                                    </div>
+                                </div>
+                                <div class="option border pointer text-center d-block my-2">
+                                    <h4 class="font-weght-bold"><a href="">Third Party</a></h4>
+                                    <div class="text-muted">
+                                        covers the damage of the third party.
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn rounded" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn rounded">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of the modal of plan -->
+
+    <!-- modal fot the edit  Select Addons &amp; Accessories  -->
+    <div class="modal fade" id="addons-btn" tabindex="-1" role="dialog" aria-labelledby="addons-btn"
+         aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class=" p-3">
+                        <div class="d-flex align-items-center justify-content-between">
+
+                            <label class=" pointer" data-toggle="modal" data-target="#addons-btn">
+                                Select Addons &amp; Accessories
+                                <span data-toggle="tooltip" data-placement="bottom"
+                                      title="Additional covers which you may add in your policy for better financial
+                                            protection of your car or the individuals
+                                            traveling in your car.">
+                                            <span class="wrapper border rounded-circle py-1 px-2  text-success "
+                                                  style="cursor:pointer">i</span>&nbsp;
+                                      </span>
+                            </label>
+
+                        </div>
+                        <div class="dropdown-divider" style="border-top:2px solid #e9ecef; "></div>
+                        <div id="addon-popup">
+                            <div class="addons-section">
+                                <div>
+                                    <div class="font-weight-bold py-3 ">Addons<a class="text-primary">Reset All</a>
+                                    </div>
+                                    <ul>
+                                        <li><input type="checkbox" class="uk-checkbox" id="IsZD"
+                                                   value="Zero Depreciation">
+                                            <label for="IsZD">Zero
+                                                Depreciation</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" class="uk-checkbox" id="IsRSA"
+                                                   value="24x7 Roadside Assistance">
+                                            <label for="IsRSA">24x7 Roadside
+                                                Assistance</label>
+                                        </li>
+                                        <li><input type="checkbox" class="uk-checkbox" id="IsEP"
+                                                   value="Engine Protection Cover">
+                                            <label for="IsEP">Engine Protection
+                                                Cover</label>
+                                        </li>
+                                        <li><input type="checkbox" class="uk-checkbox" id="IsNCB" value="NCB Protector">
+                                            <label for="IsNCB">NCB
+                                                Protector</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" class="uk-checkbox" id="IsKLR"
+                                                   value="Key &amp; Lock Replacement"><label
+                                                    for="IsKLR">Key &amp; Lock
+                                                Replacement</label>
+                                        </li>
+                                        <li><input type="checkbox" class="uk-checkbox" id="IsCOC" value="Consumables">
+                                            <label for="IsCOC">Consumables</label>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="dropdown-divider" style="border-top:2px solid #e9ecef; "></div>
+                            <div class="accessories-section">
+                                <div>
+                                    <div class="font-weight-bold py-3">Accessories</div>
+                                    <ul>
+                                        <li class="">
+                                            <input type="checkbox" class="uk-checkbox" id="Electrical Accessories_0"
+                                                   value="on">
+                                            <label for="Electrical Accessories_0">Electrical Accessories</label>
+                                        </li>
+                                        <li class="">
+                                            <input type="checkbox" class="uk-checkbox" id="Non-Electrical Accessories_1"
+                                                   value="on">
+                                            <label for="Non-Electrical Accessories_1">Non-Electrical Accessories</label>
+                                        </li>
+                                        <li class="">
+                                            <input type="checkbox" class="uk-checkbox" id="External Bi Fuel Kit_2"
+                                                   value="on">
+                                            <label for="External Bi Fuel Kit_2">External Bi Fuel Kit</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="dropdown-divider" style="border-top:2px solid #e9ecef; "></div>
+                            <div class="additional-cover-section">
+                                <div>
+                                    <div class="font-weight-bold py-3">Additional Covers</div>
+                                    <ul>
+                                        <li class="additional-cover ">
+                                            <input type="checkbox" class="uk-checkbox" id="Paid Driver Cover_0"
+                                                   value="on">
+                                            <label for="Paid Driver Cover_0">Paid Driver Cover</label>
+                                        </li>
+                                        <li class="additional-cover ">
+                                            <input type="checkbox" class="uk-checkbox" id="Owner Driver PA Cover_1"
+                                                   value="on">
+                                            <label for="Owner Driver PA Cover_1">Owner Driver PA Cover</label>
+                                        </li>
+                                        <li class="additional-cover ">
+                                            <input type="checkbox" class="uk-checkbox" id="Unnamed Passenger PA Cover_2"
+                                                   value="on">
+                                            <label for="Unnamed Passenger PA Cover_2">Unnamed Passenger PA Cover</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="dropdown-divider" style="border-top:2px solid #e9ecef; "></div>
+                            <div class="popup-discount-section">
+                                <div>
+                                    <div class="font-weight-bold py-3">Voluntary Insurer Discounts</div>
+
+                                    <div class="discount-section">
+                                        <div class="discount">
+                                            <div class="discount-text">Choose a voluntary deductible</div>
+                                            <div class="discount-options">
+                                                <button class="discount-option  button-primary-outline my-1selected">No
+                                                    Deductible
+                                                </button>
+                                                <button class="discount-option  button-primary-outline my-1">₹ 2500
+                                                </button>
+                                                <button class="discount-option  button-primary-outline my-1">₹ 5000
+                                                </button>
+                                                <button class="discount-option  button-primary-outline my-1">₹ 7500
+                                                </button>
+                                                <button class="discount-option  button-primary-outline my-1">₹ 15000
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="discount">
+                                            <div class="discount-text font-weight-bold py-3">Is the registered owner a
+                                                member of Automobile
+                                                Association of India?
+                                            </div>
+                                            <div class="discount-options">
+                                                <button class="discount-option  button-primary-outline my-1">Yes
+                                                </button>
+                                                <button class="discount-option  button-primary-outline my-1selected">
+                                                    No
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="discount">
+                                            <div class="discount-text font-weight-bold py-3">Is the vehicle fitted with
+                                                ARAI approved
+                                                anti-theft device?
+                                            </div>
+                                            <div class="discount-options">
+                                                <button class="discount-option  button-primary-outline my-1">Yes
+                                                </button>
+                                                <button class="discount-option  button-primary-outline my-1selected">
+                                                    No
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="discount"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn rounded" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn rounded">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of the modal of  Select Addons &amp; Accessories -->
+
+</section>
+

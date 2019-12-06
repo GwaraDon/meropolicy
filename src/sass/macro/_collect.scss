@@ -1,0 +1,77 @@
+#collection-details{
+  background: $primary-2;
+  .container{
+    background: #fff;
+  }
+  .select-city-section, .select-car-model-section{
+  padding: 30px 0;
+    .city-name, .car-model{
+      width: 45%;
+      //margin: 0 auto;
+      padding: 10px 20px;
+      border: 1px solid $primary-2;
+      background: $primary-2;
+      display: inline-block;
+      //margin-bottom: 10px;
+      margin:5px auto;
+      p{
+        font-size: 1rem;
+      }
+      &:hover{
+        border:1px solid $primary!important;
+        color:$primary;
+      }
+
+    }
+
+  }
+  .select-car-section{
+    padding: 30px 0;
+    .brand{
+      width: calc(100%/4 - 20px);
+      height: 150px;
+      display: flex;
+      align-items: center;
+      margin: 5px;
+      padding: 10px;
+      border: 1px solid $primary-2;
+      &:hover{
+        border:1px solid $primary!important;
+        color:$primary;
+      }
+    }
+
+  }
+  .select-car-fuel , .select-car-variant{
+    .car-fuel-type, .car-variant{
+      padding: 10px 20px;
+      margin-bottom: 20px;
+      width: 300px;
+      border:1px solid $primary-2;
+      &:hover{
+        border: 1px solid $primary;
+        color:$primary
+      }
+    }
+  }
+  .select-car-year-section{
+    .select-car-year{
+      .car-year{
+        width: 30%;
+        padding: 10px 20px;
+        border: 1px solid $primary-2;
+        background: $primary-2;
+        display: inline-block;
+        //margin-bottom: 10px;
+        margin:5px;
+        p{
+          font-size: 1rem;
+        }
+        &:hover{
+          border:1px solid $primary!important;
+          color:$primary;
+        }
+      }
+    }
+  }
+}

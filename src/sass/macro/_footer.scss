@@ -3,7 +3,7 @@
 
 footer.footer {
   padding: 50px 25px 15px;
-  background: #000000;
+  background: darken($secondary,10%);
   color: #e9ecef;
   position: relative;
   z-index: 1;
@@ -51,11 +51,27 @@ footer.footer {
   }
 
   }
+  .social_icons {
+    color: #fff;
+    .heading h3 {
+      font-size: 16px;
+      color: #fff;
+    }
+    ul > li > a{
+      color: #fff;
+    }
+    ul > li > a span:first-child {
+      padding: 5px !important;
+      border-radius: 50%;
+      margin-right: 5px !important;
 
+    }
+
+  }
 
 }
 #mini-footer {
-  background:#141b21;
+  background:darken($secondary,30%);
   font-size: 14px;
   text-align: center;
   padding: 10px 0;

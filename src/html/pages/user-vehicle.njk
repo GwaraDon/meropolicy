@@ -1,0 +1,95 @@
+{% include 'dash-top.njk' %}
+
+    {% include 'header.njk' %}
+
+<div class="container-fluid">
+
+    <div class="row">
+        <div class="col-xl-2 col-md-3 col-sm-4">
+            {% include 'sidebar.njk' %}
+        </div>
+        <div class="col-xl-7  col-md-6 col-sm-8 ">
+            {% include 'breadcrumb.njk' %}
+            <div class="shadow p-3 mb-5 mt-2">
+            <div class="d-flex justify-content-between py-3">
+                <div class="heading my-2 pb-2 border-bottom">
+                    <h3>Vehicle details</h3>
+                </div>
+                <button id="add-vehicle" class=" btn-sm button-primary">
+                    Add Vehicle
+                </button>
+            </div>
+
+            <div class="vehicle-detail ">
+                <form action="" class="user-form">
+                    <div class="row">
+                        <div class="col-sm-6 mb-3">
+                            <div class="uk-inline w-100">
+                                <label for=""> Vehicle Type</label>
+                                <select name="" id="" class="uk-select">
+                                    <option value="">Select Your Vehicle Type</option>
+                                    <option value="">Two Wheeler</option>
+                                    <option value="">Car</option>
+                                </select>
+                         </div>
+                        </div>
+                        <div class="col-sm-6 mb-3">
+                            <div class="uk-inline w-100">
+                                <label for=""> Reg. No*</label>
+                                <input type="number" class="uk-input" placeholder="Registeration Number">
+                            </div>
+                        </div>
+                        <div class="col-sm-6 mb-3">
+                            <div class="uk-inline w-100">
+                                <label for=""> Fuel Type</label>
+                                <select name="" id="" class="uk-select">
+                                    <option value="">Select Your Fuel Type</option>
+                                    <option value="">Diesel</option>
+                                    <option value="">Petrol</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 mb-3">
+                            <div class="uk-inline w-100">
+                                <label for=""> Vehicle Make</label>
+                                <input type="text" class="uk-input" placeholder="Vehicle maker">
+                            </div>
+                        </div>
+                        <div class="col-sm-6 mb-3">
+                            <div class="uk-inline w-100">
+                                <label for=""> Vehicle Reg year</label>
+                                <input type="text" class="uk-input" placeholder="Registration Year">
+
+                            </div>
+                        </div>
+                        <div class="col-sm-6 mb-3">
+                            <div class="uk-inline w-100">
+                                <label for="">Expiry Date</label>
+                                <input type="text" class="uk-input" placeholder="Date of Policy exp">
+                            </div>
+                        </div>
+                        <div class="col-sm-12 text-center mx-auto d-block my-3">
+                            <a href="companies.html" class="button-primary">
+                                Get Quotes
+                            </a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            </div>
+
+        </div>
+        <div class="col-xl-3 col-md-3 col-sm-12">
+
+            <div class="p-xl-5 p-md-2">
+                <figure class="mb-3 p-2 border"><img src="images/nepali.jpg" alt=""></figure>
+                <figure class="mb-3 p-2 border"><img src="images/nepallife.png" alt=""></figure>
+                <figure class="mb-3 p-2 border"><img src="images/shikar.png" alt=""></figure>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% include 'footer.njk' %}
+
+{% include 'dash-bottom.njk' %}

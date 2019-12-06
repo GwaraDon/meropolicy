@@ -1,0 +1,86 @@
+{% include 'dash-top.njk' %}
+
+    {% include 'header.njk' %}
+
+<div class="container-fluid">
+
+    <div class="row">
+        <div class="col-xl-2 col-md-3 col-sm-4">
+            {% include 'sidebar.njk' %}
+        </div>
+        <div class="col-xl-7  col-md-6 col-sm-8 ">
+            {% include 'breadcrumb.njk' %}
+         <div class="shadow p-5 mb-5">
+             <div class="d-flex justify-content-center pb-3">
+                 <div class="heading my-2 pb-2 border-bottom">
+                     <h3>CLAIM ASSISTANCE</h3>
+                 </div>
+
+             </div>
+             <form action="" class="user-form">
+                 <div class="heading my-2 pb-2 border-bottom">
+                     <h4><Strong>Tell Us Few More Detail</Strong></h4>
+                 </div>
+                 <div class="row">
+                     <div class="col-sm-6 mb-3">
+                         <div class="uk-inline w-100">
+                             <label for=""> *What is the Claim For?</label>
+                             <select name="" id="" class="uk-select">
+                                 <option value="">Select Your Insurance Type</option>
+                                 <option value="">Travel </option>
+                                 <option value="">Term </option>
+                                 <option value="">Health</option>
+                                 <option value="">Car </option>
+                                 <option value="">Two Wheeler</option>
+                             </select>
+                         </div>
+                     </div>
+                     <div class="col-sm-6 mb-3">
+                         <div class="uk-inline w-100">
+                             <label for=""> Reg. Mobile No*</label>
+                             <input type="number" class="uk-input" placeholder="Mobile Number">
+                         </div>
+                     </div>
+
+                     <div class="col-sm-6 mb-3">
+                         <div class="uk-inline w-100">
+                             <label for=""> Full Name</label>
+                             <input type="text" class="uk-input" placeholder="Full name">
+                         </div>
+                     </div>
+                     <div class="col-sm-6 mb-3">
+                         <div class="uk-inline w-100">
+                             <label for=""> Your Email</label>
+                             <input type="email" class="uk-input" placeholder="Email address">
+
+                         </div>
+                     </div>
+                     <div class="col-sm-12 mb-3">
+                         <div class="uk-inline w-100">
+                         <label for="">(Optional) Tell us a little about what happened?</label>
+                             <textarea class="uk-textarea" rows="5" placeholder="Textarea"></textarea>
+                         </div>
+                 </div>
+                     <div class="col-sm-12 text-center mx-auto d-block my-3">
+                         <a href="companies.html" class="button-primary">
+                             Get Quotes
+                         </a>
+                     </div>
+                 </div>
+             </form>
+         </div>
+        </div>
+        <div class="col-xl-3 col-md-3 col-sm-12" >
+
+            <div class="p-xl-5 p-md-2">
+                <figure class="mb-3 p-2 border"><img src="images/nepali.jpg" alt=""></figure>
+                <figure class="mb-3 p-2 border"><img src="images/nepallife.png" alt=""></figure>
+                <figure class="mb-3 p-2 border"><img src="images/shikar.png" alt=""></figure>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% include 'footer.njk' %}
+
+{% include 'dash-bottom.njk' %}

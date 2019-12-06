@@ -1,0 +1,124 @@
+.payment-page{
+  .payment-mode{
+    .nav-tabs{
+      border-bottom: none;
+      .nav-item{
+        display: block;
+        width: 180px;
+        margin-bottom: 1px!important;
+
+        .nav-link{
+          background: $primary;
+          padding: 15px 20px;
+          border:$primary-2!important;
+          color: white;
+          border-radius: 0;
+          &.active{
+            background: white!important;
+            color: $primary!important;
+            border-radius: 0;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+
+    #wallet{
+      .wallet-form{
+      /* HIDE RADIO */
+      [type=radio] {
+        position: absolute;
+        opacity: 0;
+        width: 0;
+        height: 0;
+      }
+
+      /* IMAGE STYLES */
+      [type=radio] + img {
+        cursor: pointer;
+        width: 150px;
+        height: 60px;
+        padding: 10px;
+        margin: 10px;
+        transition: all .3s ease;
+      }
+
+      /* CHECKED STYLES */
+      [type=radio]:checked + img {
+        outline: 2px solid $primary;
+        background: $primary-2;
+        padding: 2px!important;
+      }
+      }
+    }
+  }
+  @media screen and (max-width:767px){
+  .payment-mode{
+    flex-wrap: wrap;
+    ul.nav-tabs{
+      flex-direction: row!important;
+    }
+    .nav-item{
+      width:auto!important ;
+      margin: 5px;
+      .nav-link{
+        &.active{
+          border: 2px solid $primary!important;
+          box-shadow: 0 2px 7px $primary-2;
+        }
+
+
+      }
+    }
+  }
+  }
+}
+//renew page
+#renew-section{
+  .renew-info{
+
+  }
+  .renew-form{
+
+
+    /* HIDE RADIO */
+    [type=radio] {
+      position: absolute;
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+
+    /* IMAGE STYLES */
+    [type=radio] + img {
+      cursor: pointer;
+      width: 180px;
+      height: 90px;
+      padding: 10px;
+      margin: 10px;
+      border: 1px solid $primary-2;
+      transition: all .2s ease;
+    }
+
+    /* CHECKED STYLES */
+    [type=radio]:checked + img {
+      outline: 1px solid $primary;
+      background: $primary-2;
+      padding: 0!important;
+      box-shadow: 0 2px 7px #ccc;
+    }
+  }
+  .renew-company{
+    figure{
+      width: 200px;
+      height: 150px;
+      margin: auto;
+      text-align: center;
+      display: block;
+      padding: 10px 0;
+      img{
+        height: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,76 @@
+{% include 'dash-top.njk' %}
+
+    {% include 'header.njk' %}
+
+<div class="container-fluid">
+
+    <div class="row">
+        <div class="col-xl-2 col-md-3 col-sm-4">
+            {% include 'sidebar.njk' %}
+        </div>
+        <div class="col-xl-7  col-md-6 col-sm-8">
+            {% include 'breadcrumb.njk' %}
+            <div class="shadow p-3 mb-5 mt-2">
+                <div class="heading my-3 pb-2 border-bottom d-inline-block">
+                    <h3>User Details</h3>
+                </div>
+                <div class="user-profile-edit">
+                    <form action="" class="user-form">
+                        <div class="row">
+                            <div class="col-sm-6 mb-3">
+                                <div class="uk-inline w-100">
+                                    <span class="uk-form-icon" uk-icon="icon: user"></span>
+                                    <input type="text" class="uk-input" placeholder="FUll NAME">
+                                </div>
+                            </div>
+                            <div class="col-sm-6 mb-3">
+                                <div class="uk-inline w-100">
+                                    <span class="uk-form-icon icofont-ui-touch-phone"></span>
+                                    <input type="number" class="uk-input" placeholder="Mobile">
+                                </div>
+                            </div>
+                            <div class="col-sm-6 mb-3">
+                                <div class="uk-inline w-100">
+                                    <span class="uk-form-icon icofont-email"></span>
+                                    <input type="email" class="uk-input" placeholder="Email">
+                                </div>
+                            </div>
+                            <div class="col-sm-6 mb-3">
+                                <div class="uk-inline w-100">
+                                    <span class="uk-form-icon icofont-location-pin"></span>
+                                    <input type="text" class="uk-input" placeholder="City">
+                                </div>
+                            </div>
+                            <div class="col-sm-6 mb-3">
+                                <div class="uk-inline w-100">
+                                    <span class="uk-form-icon icofont-users-alt-4"></span>
+                                    <input type="text" class="uk-input" placeholder="Martial Status">
+                                </div>
+                            </div>
+                            <div class="col-sm-6 mb-3">
+                                <div class="uk-inline w-100">
+                                    <span class="uk-form-icon icofont-calendar"></span>
+                                    <input type="text" class="uk-input" placeholder="Date Of Birth">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="col-xl-3 col-md-3 col-sm-12">
+
+            <div class="p-xl-5 p-md-2">
+                <figure class="mb-3 p-2 border"><img src="images/nepali.jpg" alt=""></figure>
+                <figure class="mb-3 p-2 border"><img src="images/nepallife.png" alt=""></figure>
+                <figure class="mb-3 p-2 border"><img src="images/shikar.png" alt=""></figure>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% include 'footer.njk' %}
+
+{% include 'dash-bottom.njk' %}

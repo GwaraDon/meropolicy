@@ -1,0 +1,168 @@
+{% include 'dash-top.njk' %}
+
+    {% include 'header.njk' %}
+
+<div class="container-fluid">
+
+    <div class="row">
+        <div class="col-xl-2 col-md-3 col-sm-4">
+            {% include 'sidebar.njk' %}
+        </div>
+        <div class="col-xl-7  col-md-6 col-sm-8">
+            {% include 'breadcrumb.njk' %}
+            <div class="shadow p-3 mb-5 mt-2">
+                <ul class="nav nav-tabs jus" id="myTab" role="tablist">
+                    <li class="nav-item w-50">
+                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#raise" role="tab"
+                           aria-controls="raise" aria-selected="true">Raise Query</a>
+                    </li>
+                    <li class="nav-item w-50">
+                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#request" role="tab"
+                           aria-controls="request" aria-selected="false">Request Callback</a>
+                    </li>
+
+                </ul>
+                <div class="tab-content py-5 px-2" id="myTabContent">
+                    <div class="tab-pane fade show active" id="raise" role="tabpanel" aria-labelledby="raise-tab">
+                        <form class="uk-form-horizontal uk-margin-large">
+                            <div class="uk-margin">
+                                <div class="uk-form-label">Talk About</div>
+                                <div class="uk-form-controls d-flex ">
+                                    <label class="mr-3"><input class="uk-radio mr-2" type="radio" name="radio"> Buy a
+                                        New Plan</label><br>
+                                    <label class="mr-3"><input class="uk-radio mr-2" type="radio"
+                                                               name="radio">Other</label>
+                                </div>
+                            </div>
+                            <div class="uk-margin">
+                                <label class="uk-form-label" for="form-horizontal-emailIds">Email Address</label>
+                                <div class="uk-form-controls">
+                                    <input class="uk-input" id="form-horizontal-emailIds" type="email"
+                                           placeholder="Sometext@email.com...">
+                                </div>
+                            </div>
+
+                            <div class="uk-margin">
+                                <label class="uk-form-label" for="form-horizontal-select-product">Select Product</label>
+                                <div class="uk-form-controls">
+                                    <select class="uk-select" id="form-horizontal-select-product">
+                                        <option>Healths Plans</option>
+                                        <option>Life Plans</option>
+                                        <option>Travel Plans</option>
+                                        <option>Car Plans</option>
+                                        <option>Investment Plans</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="uk-margin">
+                                <label class="uk-form-label" for="form-horizontal-Query">Query Type</label>
+                                <div class="uk-form-controls">
+                                    <select class="uk-select" id="form-horizontal-Query">
+                                        <option>Product Related</option>
+                                        <option>Callings Related</option>
+                                        <option>Website</option>
+                                        <option>Payment Related</option>
+                                        <option>Investment Plans</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="uk-margin">
+                                <label class="uk-form-label" for="form-horizontal-Request">Request Type</label>
+                                <div class="uk-form-controls">
+                                    <select class="uk-select" id="form-horizontal-Request">
+                                        <option>Complaint</option>
+                                        <option>Service</option>
+                                        <option>Feedback</option>
+
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="uk-margin">
+                                <label class="uk-form-label">Comment</label>
+                                <div class="uk-form-controls">
+                                    <textarea class="uk-textarea" rows="5" placeholder="Textarea"></textarea>
+                                </div>
+                            </div>
+                            <div class="uk-margin mx-auto text-center d-block float-right">
+                                <button class="button-primary "> Submit</button>
+                            </div>
+
+
+                        </form>
+                    </div>
+                    <div class="tab-pane fade" id="request" role="tabpanel" aria-labelledby="request-tab">
+                        <form class="uk-form-horizontal uk-margin-large">
+                            <div class="uk-margin">
+                                <div class="uk-form-label">Talk About</div>
+                                <div class="uk-form-controls d-flex ">
+                                    <label class="mr-3"><input class="uk-radio mr-2 old-one" type="radio" name="radio" checked> Existing
+                                        New Plan</label><br>
+                                    <label class="mr-3"><input class="uk-radio mr-2 new-one" type="radio"
+                                                               name="radio">Support To Buy New Plan</label>
+                                </div>
+                            </div>
+                            <div class="radio-checked-old">
+                                <div class="p-5 m-5 text-center">
+                                    You do not have existing plan
+                                </div>
+                            </div>
+                            <!-- if user select the buy new plan then show this section -->
+                            <div class="radio-checked-new" style="display: none">
+                                <div class="uk-margin">
+                                    <label class="uk-form-label" for="form-horizontal-select-product">Select Product</label>
+                                    <div class="uk-form-controls">
+                                        <select class="uk-select" id="form-horizontal-select-product">
+                                            <option>Healths Plans</option>
+                                            <option>Life Plans</option>
+                                            <option>Travel Plans</option>
+                                            <option>Car Plans</option>
+                                            <option>Investment Plans</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="uk-margin">
+                                    <label class="uk-form-label" for="form-horizontal-When">When</label>
+                                    <div class="uk-form-controls">
+                                        <select class="uk-select" id="form-horizontal-When">
+                                            <option>Today </option>
+
+                                            <option>Tomorrow</option>
+
+                                        </select>
+                                    </div>
+                                </div>
+                                <!-- if user select today then hide this input section -->
+                                <div class="uk-margin">
+                                    <label class="uk-form-label" for="form-horizontal-Time">Time</label>
+                                    <div class="uk-form-controls">
+                                        <select class="uk-select" id="form-horizontal-Time">
+                                            <option>11am - 12pm</option>
+                                            <option>12pm - 1pm</option>
+                                            <option>1pm - 2pm</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="uk-margin mx-auto text-center d-block float-right">
+                                    <button class="button-primary "> Submit</button>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-3 col-md-3">
+
+            <div class="p-xl-5 p-md-2 col-sm-12">
+                <figure class="mb-3 p-2 border"><img src="images/nepali.jpg" alt=""></figure>
+                <figure class="mb-3 p-2 border"><img src="images/nepallife.png" alt=""></figure>
+                <figure class="mb-3 p-2 border"><img src="images/shikar.png" alt=""></figure>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% include 'footer.njk' %}
+
+{% include 'dash-bottom.njk' %}

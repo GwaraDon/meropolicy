@@ -1,0 +1,620 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mero Policy</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- bootstrap datepicker -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.css" rel="stylesheet" type="text/css" />
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
+     <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.16/css/uikit.min.css" />
+    <!-- metis menu -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/metisMenu/2.7.8/metisMenu.min.css">
+     
+    <link rel="stylesheet" href="css/icofont/icofont.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- font family -->
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300|Roboto:300&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="uk-offcanvas-content">
+
+
+    <!-- Page Preloder -->
+<header class="header " id="header">
+    <div class="bottom-header container py-3 relative ">
+        <div class="row  align-items-center">
+            <div class="col-lg-2 col-md-3 col-8">
+
+                <div class="logo">
+                    <a href="index.html">
+
+
+                        <img src="images/Mero/Untitled-final.png" alt="">
+                    </a>
+                </div>
+
+            </div>
+            <div class="col-lg-10 col-md-9 col-4">
+                <div href="#offcanvas-usage" uk-toggle class="bars d-none float-right" id="bars">
+                    <span uk-icon="menu"></span>
+                </div>
+                <div class="clearfix"></div>
+                <div class="navigation">
+                    <ul class=" ul-none d-flex justify-content-end align-items-center ">
+                        <li><a href="life_insurance.html" class="menu active">Life Insurance</a>
+                        <ul class=" sub-dropdown sub-menu" uk-dropdown  >
+                                <li><a  href="" ><span >Term Insurance</span></a></li>
+                                <li> <a  href="investment_plans.html"><div class="icon"></div>Investment Plans</a></li>
+                                <li><a  href="/"><span >Child Plans</span></a></li>
+                                <li><a  href="/"><span >Pension Plans</span></a></li>
+                                <li><a  href="/"><span >ULIP</span></a></li>
+                                <li><a  href=""><span >Money Back Policy</span></a></li>
+                                <li><a  href=""><span >Endowment Policy</span></a></li>
+                                <li><a  href=""><span >Tax Saving Investments</span></a></li>
+                                <li><a  href=""><span >Guaranteed Return Plans</span></a></li>
+
+                        </ul>
+
+                        </li>
+                        </li>
+                        <li><a href="health_insurance.html" class="menu">Health Insurance</a>
+                            <ul class=" sub-dropdown sub-menu" uk-dropdown  >
+                                <li><a  href="" ><span >  Health Plans</span></a></li>
+                                <li> <a  href="/"><div class="icon"></div>   Family Health Plan</a></li>
+                                <li><a  href="/"><span >   Senior Citizen Health Insurance</span></a></li>
+                                <li><a  href="/"><span >Critical Illness Insurances</span></a></li>
+                                <li><a  href="/"><span > Health Insurance Claim</span></a></li>
+                                <li><a  href=""><span >   Mediclaim Policy</span></a></li>
+                                <li><a  href=""><span >Health Insurance Calculator</span></a></li>
+                            </ul>
+                        </li>
+                        <li><a href="car_insurance.html" class="menu">Motor Insurance</a></li>
+                        <li><a href="" class="menu">Other Insurance</a>
+                            <ul class=" sub-dropdown sub-menu" uk-dropdown  >
+                                <li><a  href="home-insurance.html" ><span >  Home Plans</span></a></li>
+                                <li> <a  href="travel-insurance.html"><div class="icon"></div>   Travel Insurance Plan</a></li>
+                                <li> <a  href="group-insurance.html"><div class="icon"></div>   Group Insurance Plan</a></li>
+                          </ul>
+                        </li>
+                        <li><a href="renew.html" class="menu">Renewal</a>
+                            <ul class=" sub-dropdown sub-menu" uk-dropdown  >
+                                <li><a  href="renew.html" ><span >  Health Renewal</span></a></li>
+                                <li> <a  href="renew.html"><div class="icon"></div>  Life Renewal</a></li>
+                           </ul>
+                        </li>
+                        <li><a href="javascript:void(0)" class="menu" data-toggle="modal" data-target="#login-modal"><i class="icofont-user-alt-5 mr-1"></i><span >My account</span></a>
+                            <!-- login modal to be called -->
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- mobile menu -->
+        
+
+<div id="offcanvas-usage" uk-offcanvas="overlay: true; flip: true ">
+    <div class="uk-offcanvas-bar mobile-nav">
+
+        <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+        <div class="">
+
+            <ul class="metismenu" id="menu">
+                <li>
+                    <a href="index.html" aria-expanded="true">Home</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" aria-expanded="false">Life Insurance<span class="fa arrow "></span></a>
+                    <ul aria-expanded="false" class="list-levels">
+                        <li><a href="life_insurance.html"><span>Term Insurance</span></a></li>
+                        <li><a href="life_insurance.html">    Investment Plans</a></li>
+                        <li><a href="life_insurance.html"><span>Child Plans</span></a></li>
+                        <li><a href="life_insurance.html"><span>Pension Plans</span></a></li>
+                        <li><a href="life_insurance.html"><span>ULIP</span></a></li>
+                        <li><a href="life_insurance.html"><span>Money Back Policy</span></a></li>
+                        <li><a href="life_insurance.html"><span>Endowment Policy</span></a></li>
+                        <li><a href="life_insurance.html"><span>Tax Saving Investments</span></a></li>
+                        <li><a href="life_insurance.html"><span>Guaranteed Return Plans</span></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" aria-expanded="false">
+                        Health Insurance<span class="fa arrow"></span>
+                    </a>
+                    <ul aria-expanded="false" class="list-levels">
+                        <li><a href="health_insurance.html"><span>  Health Plans</span></a></li>
+                        <li><a href="health_insurance.html">  Family Health Plan</a></li>
+                        <li><a href="health_insurance.html"><span>   Senior Citizen Health Insurance</span></a></li>
+                        <li><a href="health_insurance.html"><span>Critical Illness Insurances</span></a></li>
+                        <li><a href="health_insurance.html"><span> Health Insurance Claim</span></a></li>
+                        <li><a href="health_insurance.html"><span>   Mediclaim Policy</span></a></li>
+                        <li><a href="health_insurance.html"><span>Health Insurance Calculator</span></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" aria-expanded="false">
+                        Motor Insurance<span class="fa arrow"></span>
+                    </a>
+                    <ul aria-expanded="false" class="list-levels">
+                        <li><a href="car_insurance.html"><span> Car Plans</span></a></li>
+                        <li><a href="car_insurance.html"><span> Car Insurance Claim</span></a></li>
+                        <li><a href="car_insurance.html"><span>   Two Wheeler</span></a></li>
+                        <li><a href="car_insurance.html"><span>Two Wheeler Insurance Claim</span></a></li>
+
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" aria-expanded="false">
+                        Other Insurance<span class="fa arrow"></span>
+                    </a>
+                    <ul aria-expanded="false" class="list-levels">
+                        <li><a href="home-insurance.html"><span>  Home Plans</span></a></li>
+                        <li><a href="travel-insurance.html"> Travel Insurance Plan</a></li>
+                        <li><a href="group-insurance.html">  Group Insurance Plan </a> </li>
+
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" aria-expanded="false">
+                       Renewal<span class="fa arrow"></span>
+                    </a>
+                    <ul aria-expanded="false" class="list-levels">
+                        <li><a href="renew.html"><span>  Life renew Plans</span></a></li>
+                        <li><a href="renew.html">Health renew Plan</a></li>
+
+
+                    </ul>
+                </li>
+                <li><a href="javascript:void(0)" class="menu" data-toggle="modal" data-target="#login-modal"><i class="icofont-user-alt-5 mr-1"></i><span >My account</span></a>
+
+                <li>
+                    <a href="aboutpage.html" aria-expanded="false">About us</a>
+                </li>
+                <li>
+                    <a href="contactpage.html" aria-expanded="false">Contact us</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+    </div>
+
+</header>
+
+
+
+
+<div class="payment-page light-bg py-5 border-top">
+    <div class="container">
+        <div class="row bg-white py-5">
+            <div class="heading px-4 mb-3">
+                <h1>Choose Your Payment Method</h1>
+            </div>
+            <div class="col-md-9">
+                <div class="payment-mode border d-flex mb-5 ">
+                    <ul class="nav nav-tabs d-flex flex-column mr-4" id="payment-tab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="debit-tab" data-toggle="tab" href="#debit" role="tab"
+                               aria-controls="debit" aria-selected="true">Debit Card</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="credit-tab" data-toggle="tab" href="#credit" role="tab"
+                               aria-controls="credit" aria-selected="false">Credit Card</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="net_banking-tab" data-toggle="tab" href="#net_banking" role="tab"
+                               aria-controls="contact" aria-selected="false">Net Banking</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="wallet-tab" data-toggle="tab" href="#wallet" role="tab"
+                               aria-controls="contact" aria-selected="false">Wallet</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content p-3" id="payment-type">
+                        <div class="tab-pane fade show active" id="debit" role="tabpanel" aria-labelledby="debit-tab">
+                            <div class="sub-heading p-2 border-bottom mb-3">
+                                <h3><strong>Debit card details</strong></h3>
+                            </div>
+                            <div class="debit-card-form ">
+                                <form action="">
+                                    <div class="uk-margin">
+                                        <label for="card-number"> Card Number</label>
+                                        <input class="uk-input" type="text" id="card-number"
+                                               placeholder="xxxx xxxx xxxx xxxx" maxlength="19">
+                                    </div>
+                                    <div class="uk-margin">
+                                        <label for="card-name">Card Name</label>
+                                        <input class="uk-input" type="text" id="card-name" placeholder="Enter the given card name">
+                                    </div>
+                                    <div class="uk-grid-small" uk-grid>
+                                        <div class="uk-width-1-2@s">
+                                            <label class="uk-form-label" for="expired-date">Expire Date</label>
+                                            <div class="input-group date-picker date" data-date-format="mm-dd-yyyy">
+                                                <input class="uk-input" type="text" id="expired-date" readonly>
+                                                <span class="add-on pt-2 d-none"> <i
+                                                            class="icofont-edit-alt"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="uk-width-1-2@s">
+                                            <label class="uk-form-label" for="ccv">CCV</label>
+                                            <div class="uk-form-controls">
+                                                <input class="uk-input" id="ccv" type="number"
+                                                       maxlength="3" placeholder="xxx">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="payable-amount my-3">
+                                        <button class="button-primary">
+                                            Pay <span>18000</span>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+
+                        </div>
+                        <div class="tab-pane fade" id="credit" role="tabpanel" aria-labelledby="credit-tab">
+
+                            <div class="sub-heading p-2 border-bottom mb-3">
+                                <h3><strong>Credit card details</strong></h3>
+                            </div>
+                            <div class="credit-card-form ">
+                                <form action="">
+                                    <div class="uk-margin">
+                                        <label for="card-number"> Card Number</label>
+                                        <input class="uk-input" type="text" id="card-number"
+                                               placeholder="xxxx xxxx xxxx xxxx" maxlength="19">
+                                    </div>
+                                    <div class="uk-margin">
+                                        <label for="card-name">Card Name</label>
+                                        <input class="uk-input" type="text" id="card-name" placeholder="Enter the given card name">
+                                    </div>
+                                    <div class="uk-grid-small" uk-grid>
+                                        <div class="uk-width-1-2@s">
+                                            <label class="uk-form-label" for="expired-date">Expire Date</label>
+                                            <div class="input-group date-picker date" data-date-format="mm-dd-yyyy">
+                                                <input class="uk-input" type="text" id="expired-date" readonly>
+                                                <span class="add-on pt-2 d-none"> <i
+                                                            class="icofont-edit-alt"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="uk-width-1-2@s">
+                                            <label class="uk-form-label" for="ccv">CCV</label>
+                                            <div class="uk-form-controls">
+                                                <input class="uk-input" id="ccv" type="number"
+                                                       maxlength="3" placeholder="xxx">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="payable-amount my-3">
+                                        <button class="button-primary">
+                                            Pay <span>18000</span>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="net_banking" role="tabpanel" aria-labelledby="net_banking-tab">
+                            <div class="sub-heading p-2 border-bottom mb-3">
+                                <h3><strong>Net Banking</strong></h3>
+                            </div>
+                            <div class="net_banking-form ">
+                                <form action="">
+                                    <div class="uk-margin">
+                                        <label for="card-number"> Select Bank </label>
+                                        <div class="uk-form-controls">
+                                            <select class="uk-select" id="form-stacked-select">
+                                                <option>NIC Asia Bank</option>
+                                                <option>Everest Bank</option>
+                                                <option>Nabil Bank</option>
+                                                <option>Prime Bank</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="payable-amount my-3">
+                                        <button class="button-primary">
+                                            Pay <span>18000</span>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="wallet" role="tabpanel" aria-labelledby="wallet-tab">
+                            <div class="sub-heading p-2 border-bottom mb-3">
+                                <h3><strong>Wallet/Payment Banking</strong></h3>
+                            </div>
+                            <div class="wallet-form ">
+                                <form action="">
+                                    <label>
+                                        <input type="radio" name="test" value="esewa" checked>
+                                        <img src="images/esewa_logo.png" style="background:#333;">
+                                    </label>
+
+                                    <label>
+                                        <input type="radio" name="test" value="khalti">
+                                        <img src="images/khalti-logo.svg">
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="test" value="cellpay">
+                                        <img src="images/cellpay.png">
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="test" value="Ime-Pay-Nepal">
+                                        <img src="images/Ime-Pay-Nepal.jpg">
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="test" value="iPay-Nepal">
+                                        <img src="images/iPay-Nepal.jpg">
+                                    </label>
+
+                                    <div class="payable-amount my-3">
+                                        <button class="button-primary">
+                                            Pay <span>18000</span>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="user-detail border mb-5">
+                    <div class="heading border-bottom mb-3  p-2">
+                        Proposer's Detail
+                    </div>
+                    <div class="user-detail-data px-2 ">
+                        <div class="email d-flex mb-2 align-items-center">
+                            <i class="icofont-email mr-3"></i>
+                            <span>herome@gmail.com</span>
+                        </div>
+                        <div class="mobile d-flex mb-2 align-items-center">
+                            <i class="icofont-mobile-phone mr-3"></i>
+                            <span>98**********</span>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="order-detail border ">
+                    <div class="heading border-bottom mb-3  p-2">
+                       Your Order
+                    </div>
+                    <div class="order-detail-data">
+                        <div class="d-flex mb-2  border-bottom p-2 align-items-center">
+                            <figure style="width: 100px;margin-right: 10px"><img src="images/nepali.jpg" alt=""></figure>
+                            <div class="product_name">
+                                <p style="font-size: 12px">Name of the product you had order</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between p-2">
+                            <span><strong>Total Amount</strong></span>
+                            <span><strong>180000</strong></span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-6 ">
+                <div class="footer_title">
+                        <h3>General Insurance</h3>
+                </div>
+                <div class="footer_list">
+                    <ul>
+                       <li class="footer_list--item"><a href="">Car Insurance</a></li>
+                       <li class="footer_list--item"><a href="">Health Insurance</a></li>
+                       <li class="footer_list--item"><a href="">Travel Insurance</a></li>
+                       <li class="footer_list--item"><a href="">Two-Wheeler Insurance</a></li>
+                       <li class="footer_list--item"><a href="">Third Party Car Insurance</a></li>
+                       <li class="footer_list--item"><a href="">Motor Insurance</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 ">
+                <div class="footer_title">
+                    <div class="heading">
+                        <h3>Life Insurance</h3>
+                    </div>
+                </div>
+                <div class="footer_list">
+                    <ul>
+                        <li class="footer_list--item"><a href="/">Term Insurance</a></li>
+                        <li class="footer_list--item"><a href="/">Spouse Term Plan</a></li>
+                        <li class="footer_list--item"><a href="/">Return of Premium</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class=" col-md-3 col-sm-6">
+                <div class="footer_title">
+                    <div class="heading">
+                        <h3>Investments</h3>
+                    </div>
+                </div>
+                <div class="footer_list">
+                    <ul>
+                        <li class="footer_list--item"><a href="/">Investment Plans</a></li>
+                        <li class="footer_list--item"><a href="/">Child Plans</a></li>
+                        <li class="footer_list--item"><a href="/">Pension Plans</a></li>
+                        <li class="footer_list--item"><a href="">ULIPs</a></li>
+                        <li class="footer_list--item"><a href="/">Money Back Policy</a></li>
+                        <li class="footer_list--item"><a href="/">Endowment Policy</a></li>
+                        <li class="footer_list--item"><a href="/">Guaranteed Return Plans</a></li>
+                        <li class="footer_list--item"><a href="/">Tax Saving Plans</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class=" col-md-3 col-sm-6">
+                <div class="footer_title">
+                    <div class="heading">
+                        <h3>Department</h3>
+                    </div>
+                </div>
+                <div class="footer_list">
+                    <ul>
+                         <li class="footer_list--item"><a href="">Group Mediclaim</a></li>
+                         <li class="footer_list--item"><a href="">Corporate Insurance</a></li>
+                         <li class="footer_list--item"><a href="">Cancer Insurance</a></li>
+                         <li class="footer_list--item"><a href="">Home Insurance</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="social_icons">
+            <ul class="d-flex align-items-center justify-content-between ">
+                <li><div class="heading">
+                        <h3>Follow Us</h3>
+                    </div>
+                </li>
+
+                <li class=" "><a href=""> <span   uk-icon="facebook" class="facebook"></span><span>facebook</span> </a></li>
+               <li class=" "><a href=""> <span   uk-icon="google-plus" class="google-plus"></span><span>google plus</span></a></li>
+               <li class=" "><a href=""> <span   uk-icon="twitter" class="twitter"></span><span>twitter</span></a></li>
+               <li class=" "><a href=""> <span   uk-icon="instagram" class="instagram"></span><span>instagram</span></a></li>
+               <li class=" "><a href=""> <span   uk-icon="youtube" class="youtube"></span><span>youtube</span></a></li>
+               <li class=" "><a href=""> <span   uk-icon="tumblr" class="tumblr"></span><span>tumblr</span></a></li>
+               <li class=" "><a href=""> <span   uk-icon="pinterest" class="pinterest"></span><span>pinterest</span></a></li>
+
+            </ul>
+        </div>
+
+    </div>
+
+
+</footer>
+<footer id="mini-footer">
+    <p>Powered by <a href="" style="color: #ff6268"> Next Nepal</a></p>
+</footer>
+<!-- login-modal -->
+<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="login-modal" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title" id="login-modal">Login Now</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+             <div class="row align-items-center">
+                 <div class="col-sm-6">
+                     <div class="login-img">
+                     <figure><img src="images/login.svg" alt=""></figure>
+                     </div>
+                 </div>
+                 <div class="col-sm-6">
+                     <div class="login-form">
+                         <form action="">
+                             <div class="login-first--page">
+
+                                 <div class="uk-margin">
+                                     <div class="uk-inline w-100  shadow-sm">
+                                         <span class="uk-form-icon " uk-icon="icon:world"></span>
+                                         <select class="uk-select pl-5  uk-form-large" >
+                                             <option value="">Select Your Country</option>
+                                             <option value="">Nepal</option>
+                                             <option value="">China</option>
+                                             <option value="">USA</option>
+                                         </select>
+                                     </div>
+                                 </div>
+                                 <div class="uk-margin">
+                                     <div class="uk-inline w-100   shadow-sm">
+                                         <span class="uk-form-icon" uk-icon="icon: receiver"></span>
+                                         <input class="uk-input uk-form-large pl-5" type="number" placeholder="Mobile number">
+                                     </div>
+                                 </div>
+                                 <div class="uk-margin d-block ">
+                                     <div class="button-primary text-center w-50 mx-auto" id="login-first">
+                                         Proceed
+                                     </div>
+                                 </div>
+                             </div>
+                             <div class="login-second--page" style="display: none">
+                                 <div class="uk-margin">
+                                     <div class="uk-inline w-100   shadow-sm">
+                                         <span class="uk-form-icon" uk-icon="icon: user"></span>
+                                         <input class="uk-input uk-form-large pl-5" type="text" placeholder="Full Name">
+                                     </div>
+                                 </div>
+                                 <div class="uk-margin">
+                                     <div class="uk-inline w-100   shadow-sm">
+                                         <span class="uk-form-icon" uk-icon="icon: mail"></span>
+                                         <input class="uk-input uk-form-large pl-5" type="email" placeholder="Email">
+                                     </div>
+                                 </div>
+                                 <div class="uk-margin">
+                                     <div class="uk-inline w-100   shadow-sm">
+                                         <span class="uk-form-icon" uk-icon="icon: location"></span>
+                                         <input class="uk-input uk-form-large pl-5" type="text" placeholder="Address">
+                                     </div>
+                                 </div>
+                                 <div class="uk-margin">
+                                     <a class="button-primary w-50 text-center mx-auto" href="dashboard.html" id="login-first">
+                                         Sumbit
+                                     </a>
+                                 </div>
+                             </div>
+
+                         </form>
+                     </div>
+                 </div>
+             </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+<!-- datepicker bootstrap -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
+<!-- inputmask js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.1.62/jquery.inputmask.bundle.min.js"></script>
+<!-- UIkit JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.16/js/uikit.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.16/js/uikit-icons.min.js"></script>
+<!-- metis menu -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/metisMenu/2.7.8/metisMenu.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+
+
+<script src="js/app.min.js"></script>
+
+</body>
+</html>

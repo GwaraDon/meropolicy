@@ -1,0 +1,525 @@
+{% include 'dash-top.njk' %}
+
+
+    {% include 'header.njk' %}
+
+        <section id="detail-info">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="information ">
+                        <div class="information-form py-5">
+                            <ul uk-accordion>
+                                <li class="uk-open">
+                                    <a class="uk-accordion-title light-bg p-2 " href="#">Trip Detail</a>
+                                    <div class="uk-accordion-content">
+                                        <form class="uk-grid-small" uk-grid>
+                                            <div class="uk-width-1-2@s">
+                                                <label class="uk-form-label" for="form-stacked-visa">Visa Type</label>
+                                                <div class="uk-form-controls">
+                                                    <select class="uk-select" id="form-stacked-visa">
+                                                        <option>Tourist Visa</option>
+                                                        <option>Business Visa</option>
+                                                        <option>Work Visa</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="uk-width-1-2@s">
+                                                <label class="uk-form-label" for="form-stacked-visa">Purpose of Travel</label>
+                                                <div class="uk-form-controls">
+                                                    <select class="uk-select" id="form-stacked-visa">
+                                                        <option>Holiday</option>
+                                                        <option>Business </option>
+
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                        </form>
+                                    </div>
+                                </li>
+                                <li class="uk-open">
+                                    <a class="uk-accordion-title light-bg p-2 " href="#">Proposal Form</a>
+                                    <div class="uk-accordion-content">
+                                        <form class="uk-grid-small" uk-grid>
+                                            <div class="uk-width-1-2@s">
+                                                <div uk-form-custom="target: true">
+                                                    <input type="file">
+                                                    <input class="uk-input uk-form-width-medium" type="text" placeholder=" front side of your passport" disabled>
+                                                </div>
+                                                <button class="uk-button uk-button-default">upload</button>
+
+                                            </div>
+                                            <div class="uk-width-1-2@s">
+                                                <div uk-form-custom="target: true">
+                                                    <input type="file">
+                                                    <input class="uk-input uk-form-width-medium" type="text" placeholder=" back side of your passport" disabled>
+                                                </div>
+                                                <button class="uk-button uk-button-default">upload</button>
+
+                                            </div>
+                                            <div class="uk-width-1-2@s">
+                                                <label class="uk-form-label" for="form-stacked-name">Full Name</label>
+                                                <div class="uk-form-controls">
+                                                    <input class="uk-input" id="form-stacked-name" type="text"
+                                                           placeholder="Enter your full name...">
+                                                </div>
+                                            </div>
+                                            <div class="uk-width-1-2@s">
+                                                <label class="uk-form-label" for="form-stacked-email">Email</label>
+                                                <div class="uk-form-controls">
+                                                    <input class="uk-input" id="form-stacked-email" type="email"
+                                                           placeholder="Enter your full name...">
+                                                </div>
+                                            </div>
+                                            <div class="uk-width-1-2@s">
+                                                <label class="uk-form-label" for="form-stacked-dob">Date Of Birth</label>
+                                                <div id="" class="input-group date-picker date" data-date-format="mm-dd-yyyy">
+                                                    <input class="uk-input" type="text" readonly/>
+                                                    <span class="add-on pt-2 d-none"> <i class="icofont-edit-alt"></i></span>
+                                                </div>
+
+                                            </div>
+                                            <div class="uk-width-1-2@s">
+                                                <label class="uk-form-label" for="form-stacked-mobile">Mobile Number</label>
+                                                <div class="uk-form-controls">
+                                                    <input class="uk-input" id="form-stacked-mobile" type="number"
+                                                           placeholder="mobile number...">
+                                                </div>
+                                            </div>
+
+                                            <div class="uk-width-1-2@s">
+                                                <label class="uk-form-label" for="form-stacked-occupation">Occupation</label>
+                                                <div class="uk-form-controls">
+                                                    <input class="uk-input" id="form-stacked-occupation" type="text"
+                                                           placeholder="Occupation..">
+                                                </div>
+                                            </div>
+                                            <div class="uk-width-1-2@s">
+                                                <label class="uk-form-label" >Gender</label>
+                                                <div class="d-flex">
+                                                    <label class="border p-2 mx-2 pointer ">
+                                                        <input class="uk-radio mr-2" type="radio" name="radio2" checked>
+                                                        Male
+                                                    </label>
+                                                    <label class="border p-2 mx-2 pointer">
+                                                        <input class="uk-radio mr-2" type="radio" name="radio2"> Female
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="uk-width-1-2@s">
+                                                <label class="uk-form-label" for="form-stacked-pan">Passport number</label>
+                                                <div class="uk-form-controls">
+                                                    <input class="uk-input" id="form-stacked-pan" type="text"
+                                                           placeholder="pan number..">
+                                                </div>
+                                            </div>
+                                            <div class="uk-width-1-2@s">
+                                                <label class="uk-form-label" for="form-stacked-city">City name</label>
+                                                <div class="uk-form-controls">
+                                                    <input class="uk-input" id="form-stacked-city" type="text"
+                                                           placeholder="city name..">
+                                                </div>
+                                            </div>
+                                            <div class="uk-width-1-2@s">
+                                                <label class="uk-form-label" for="form-stacked-address">Address</label>
+                                                <div class="uk-form-controls">
+                                                    <input class="uk-input" id="form-stacked-address" type="text"
+                                                           placeholder="address line..">
+                                                </div>
+                                            </div>
+                                            <div class="uk-width-1-2@s">
+                                                <label class="uk-form-label" for="form-stacked-status">Marital Status</label>
+                                                <div class="uk-form-controls">
+                                                    <select class="uk-select" id="form-stacked-status">
+                                                        <option>Single</option>
+                                                        <option>Married</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="uk-width-1-2@s">
+                                                <label class="uk-form-label" for="form-stacked-nominee-name">Nominee Name</label>
+                                                <div class="uk-form-controls">
+                                                    <input class="uk-input" id="form-stacked-nominee-name" type="text"
+                                                           placeholder="nominee-name..">
+                                                </div>
+                                            </div>
+                                            <div class="uk-width-1-2@s">
+                                                <label class="uk-form-label" for="form-stacked-nominee-type">Nominee relation</label>
+                                                <div class="uk-form-controls">
+                                                    <select class="uk-select" id="form-stacked-nominee-type">
+                                                        <option>Spouse</option>
+                                                        <option>Mother</option>
+                                                        <option>Son</option>
+                                                        <option>Father</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                        </form>
+                                    </div>
+                                </li>
+
+                            </ul>
+
+                        </div>
+                        <div class="information-tabs">
+                            <nav>
+                                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                    <a class="nav-item nav-link font-weight-bold p-4  mr-3 active" id="benefits-tab"
+                                       data-toggle="tab" href="#benefits" role="tab" aria-controls="benefits"
+                                       aria-selected="true">Benefits</a>
+                                    <a class="nav-item nav-link font-weight-bold p-4  mr-3" id="features-tab"
+                                       data-toggle="tab"
+                                       href="#features" role="tab" aria-controls="features"
+                                       aria-selected="false">Features</a>
+                                    <a class="nav-item nav-link font-weight-bold p-4  mr-3" id="FAQ-tab" data-toggle="tab"
+                                       href="#eligibility" role="tab" aria-controls="eligibility" aria-selected="false">Eligibility's</a>
+                                </div>
+                            </nav>
+                            <div class="tab-content" id="nav-tabContent">
+                                <div class="tab-pane pt-3  fade show active" id="benefits" role="tabpanel"
+                                     aria-labelledby="benefits-tab">
+                                    <div class="row contentDiv">
+                                        <h3>
+                                            <i class="fa fa-hand-o-right" aria-hidden="true"></i>&nbsp; Bajaj Allianz Life
+                                            Goal
+                                            Assure</h3>
+                                        <p>A life goal based Unit Linked Insurance Plan that offers you the opportunity to
+                                            plan
+                                            for your “once in a lifetime” experiences with Zero worries. It comes with
+                                            Loyalty
+                                            Additions payable from the 6th Year and Fund Boosters payable at maturity. It
+                                            also
+                                            returns the mortality charges on policy maturity thereby assuring you maximized
+                                            returns on your investment while also offering protection from Day 1.</p>
+                                    </div>
+                                    <div class="row contentDiv" id="">
+                                        <h3>
+                                            <i class="fa fa-hand-o-right" aria-hidden="true"></i>&nbsp;Features &amp;
+                                            Benefits
+                                        </h3>
+                                        <ul>
+                                            <li>Fund Booster at maturity (for policy term 10 years or greater)</li>
+                                            <li>Loyalty additions (for Annualized Premium of Rs 5 Lakhs or more &amp; for
+                                                policy
+                                                term 10 years or greater)
+                                            </li>
+                                            <li>No premium allocation charge • Return of mortality charges at maturity
+                                                (ROMC)
+                                            </li>
+                                            <li>Option to take maturity in instalments with Return Enhancer</li>
+                                            <li>Choice of 4 investment portfolio strategies</li>
+                                            <li>Choice of eight (8) funds</li>
+                                            <li>Option to decrease sum assured and change premium payment term</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="tab-pane pt-3  fade " id="features" role="tabpanel"
+                                     aria-labelledby="features-tab">
+
+                                    <div class="row contentDiv" id="features">
+                                        <h3>
+                                            <i class="fa fa-hand-o-right" aria-hidden="true"></i>&nbsp;Key Features</h3>
+                                        <ul>
+                                            <li>
+                                                <h4>Maturity Benefit</h4>
+                                                The maturity benefit will be the Regular Premium Fund Value plus Top-up
+                                                Premium
+                                                Fund Value as on the maturity date
+                                            </li>
+                                            <li>
+                                                <h4>Death Benefit</h4>
+                                                The death benefit shall be Higher of, Regular Premium Sum Assured or Regular
+                                                Premium Fund Value plus &amp; higher of, Top-up Sum Assured or Top-up
+                                                Premium
+                                                Fund Value. In addition, it is subject to the guaranteed benefit of 105% of
+                                                the
+                                                total premiums paid.
+                                            </li>
+                                            <li>
+                                                <h4>Return of Mortality Charge (ROMC)</h4>
+                                                At the end of the policy term, on the maturity date, the total amount of
+                                                mortality charges deducted in respect of life cover provided throughout the
+                                                policy term, will be added back as ROMC, to the Regular Premium Fund Value
+                                                and
+                                                Top-up Premium Fund Value, as applicable. ROMC is not applicable in case of
+                                                a
+                                                Surrendered, Discontinued or Paidup policy and will be payable provided all
+                                                due
+                                                Regular Premiums under the policy have been paid up to date.
+                                            </li>
+                                            <li>
+                                                <h4>Fund Booster</h4>
+                                                On the maturity date, Fund Booster will be added to the Regular Premium Fund
+                                                Value, provided all due Regular Premiums have been paid up to the date.
+                                                <br>
+                                                The Fund Booster (as % of one Annualized Premium) are as below –
+                                                <div class="contentTable">
+                                                    <div class="tr">
+                                                        <div class="td"><strong>Policy Term</strong></div>
+                                                        <div class="td"><strong>Fund Booster (% of one Annualized
+                                                                Premium)</strong></div>
+                                                    </div>
+                                                    <div class="tr">
+                                                        <div class="td">5 years</div>
+                                                        <div class="td">Not Applicable</div>
+                                                    </div>
+                                                    <div class="tr">
+                                                        <div class="td">10 years</div>
+                                                        <div class="td">20%</div>
+                                                    </div>
+                                                    <div class="tr">
+                                                        <div class="td">
+                                                            15 years
+                                                            <br>
+                                                        </div>
+                                                        <div class="td">40%</div>
+                                                    </div>
+                                                    <div class="tr">
+                                                        <div class="td">
+                                                            20 years
+                                                            <br>
+                                                        </div>
+                                                        <div class="td">60%</div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <h4>Loyalty Additions </h4>
+                                                The Company shall allocate Loyalty Additions to the Regular Premium Fund
+                                                Value
+                                                as percentage of one Annualized Premium from the 6th year onwards, provided
+                                                all
+                                                due Regular Premiums have been paid up to date.
+                                                <br>
+                                                The Loyalty Additions are below:
+                                                <div class="contentTable">
+                                                    <div class="tr">
+                                                        <div class="td"><strong>Policy Term</strong></div>
+                                                        <div class="td"><strong>Loyalty Additions (% of one Annualized
+                                                                Premium)</strong></div>
+                                                    </div>
+                                                    <div class="tr">
+                                                        <div class="td">5 years</div>
+                                                        <div class="td">Not Applicable</div>
+                                                    </div>
+                                                    <div class="tr">
+                                                        <div class="td">10 years</div>
+                                                        <div class="td">0.50%</div>
+                                                    </div>
+                                                    <div class="tr">
+                                                        <div class="td">
+                                                            15 years
+                                                            <br>
+                                                        </div>
+                                                        <div class="td">1%</div>
+                                                    </div>
+                                                    <div class="tr">
+                                                        <div class="td">
+                                                            20 years
+                                                            <br>
+                                                        </div>
+                                                        <div class="td">1.5%</div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <h4>Switching of Portfolio Strategy</h4>
+                                                You may, at any policy anniversary, switch out from any of the four unique
+                                                portfolio strategies:<br>
+                                                <br>
+                                                <ol>
+                                                    <li>Investor Selectable Portfolio Strategy</li>
+                                                    <li>Wheel of Life Portfolio Strategy</li>
+                                                    <li>Trigger Based Portfolio Strategy</li>
+                                                    <li>Auto Transfer Portfolio Strategy</li>
+                                                </ol>
+                                                <br>
+                                                And switch into anyone of the following three strategies:<br>
+                                                <br>
+                                                <ol>
+                                                    <li>Investor Selectable Portfolio Strategy</li>
+                                                    <li>Wheel of Life Portfolio Strategy</li>
+                                                    <li>Auto Transfer Portfolio Strategy</li>
+                                                </ol>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="tab-pane pt-3  fade " id="eligibility" role="tabpanel"
+                                     aria-labelledby="eligibility-tab">
+                                    <div class="row contentDiv" id="eligibility">
+                                        <h3>
+                                            <i class="fa fa-hand-o-right" aria-hidden="true"></i>&nbsp;Eligibility</h3>
+                                        <table width="100%" border="0" cellpadding="0" cellspacing="0"
+                                               class="contentTable table table-stripe">
+                                            <tbody>
+                                            <tr class="tr">
+                                                <td align="center" valign="middle" class="td"><strong>Minimum Entry
+                                                        Age</strong>
+                                                </td>
+                                                <td align="center" valign="middle" class="td">0 year</td>
+                                                <td align="center" valign="middle">&nbsp;</td>
+                                            </tr>
+                                            <tr class="tr">
+                                                <td align="center" valign="middle" class="td"><strong>Maximum Entry
+                                                        Age</strong>
+                                                </td>
+                                                <td align="center" valign="middle" class="td">60 years</td>
+                                                <td align="center" valign="middle">&nbsp;</td>
+                                            </tr>
+                                            <tr class="tr">
+                                                <td align="center" valign="middle" class="td"><strong>Maximum Age at
+                                                        Maturity</strong></td>
+                                                <td align="center" valign="middle" class="td">75 years</td>
+                                                <td align="center" valign="middle">&nbsp;</td>
+                                            </tr>
+                                            <tr class="tr">
+                                                <td align="center" valign="middle" class="td"><strong>Policy Term</strong>
+                                                </td>
+                                                <td align="center" valign="middle" class="td">5 / 10 / 15 / 20 years</td>
+                                                <td align="center" valign="middle">&nbsp;</td>
+                                            </tr>
+                                            <tr class="tr">
+                                                <td align="center" valign="middle" class="td"><strong>Premium Payment
+                                                        Frequency</strong></td>
+                                                <td align="center" valign="middle" class="td">Yearly, Half-yearly, Quarterly
+                                                    and
+                                                    Monthly
+                                                </td>
+                                                <td align="center" valign="middle" class="td">&nbsp;</td>
+                                            </tr>
+                                            <tr class="tr">
+                                                <td rowspan="5" align="center" valign="middle" class="td"><strong>Premium
+                                                        Payment Term (PPT)</strong></td>
+                                                <td align="center" valign="middle" class="td"><strong>Premium Paying
+                                                        Term</strong></td>
+                                                <td align="center" valign="middle" class="td"><strong>Policy Term</strong>
+                                                </td>
+                                            </tr>
+                                            <tr class="tr">
+                                                <td align="center" valign="middle" class="td">5years</td>
+                                                <td align="center" valign="middle" class="td">5 years</td>
+                                            </tr>
+                                            <tr class="tr">
+                                                <td align="center" valign="middle" class="td">5, 7 or 10 years</td>
+                                                <td align="center" valign="middle" class="td">10 years</td>
+                                            </tr>
+                                            <tr class="tr">
+                                                <td align="center" valign="middle" class="td">10 or 15 years</td>
+                                                <td align="center" valign="middle" class="td">15 years</td>
+                                            </tr>
+                                            <tr class="tr">
+                                                <td align="center" valign="middle" class="td">15 or 20 years</td>
+                                                <td align="center" valign="middle" class="td">20 years</td>
+                                            </tr>
+                                            <tr class="tr">
+                                                <td rowspan="5" align="center" valign="middle" class="td"><strong>Minimum
+                                                        Premium</strong></td>
+                                                <td align="center" valign="middle" class="td"><strong>Frequency</strong>
+                                                </td>
+                                                <td align="center" valign="middle" class="td"><strong>Minimum
+                                                        Premium</strong>
+                                                </td>
+                                            </tr>
+                                            <tr class="tr">
+                                                <td align="center" valign="middle" class="td">Yearly</td>
+                                                <td align="center" valign="middle" class="td">36,000</td>
+                                            </tr>
+                                            <tr class="tr">
+                                                <td align="center" valign="middle" class="td">Half-yearly</td>
+                                                <td align="center" valign="middle" class="td">18,000</td>
+                                            </tr>
+                                            <tr class="tr">
+                                                <td align="center" valign="middle" class="td">Quarterly</td>
+                                                <td align="center" valign="middle" class="td">9,000</td>
+                                            </tr>
+                                            <tr class="tr">
+                                                <td align="center" valign="middle" class="td">Monthly</td>
+                                                <td align="center" valign="middle" class="td">3,000</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="package-details">
+                        <div class="p-2 light-bg mt-5">
+                            <div class="text-center">
+                                <div class="mobileView">
+                                    <div class="totalPremium">
+                                        <div class="border-bottom py-3"><Strong>Total Premium</Strong></div>
+                                        <div class="amount mb-3">
+                                            <div class="monthly button-primary py-2">
+                                                <span class="font-weight-bold" style="font-size:18px">5,000</span>
+                                                <span>Monthly</span>
+                                            </div>
+
+                                            <div class="yearly border-bottom py-3">
+                                                <span class="font-weight-bold">5,000*12</span>
+                                                <span>Yearly</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="package-details-list">
+                                <ul class="p-2 border-bottom mb-2">
+
+                                    <li>
+                                        <label>
+                                            Plan Name</label>
+                                        <span>Goal Assure</span></li>
+                                    <li>
+                                        <label>
+                                            Policy Term</label><span >20 Years</span></li>
+                                    <li>
+                                        <label>
+                                            Pay Term</label><span >20 Years</span></li>
+                                    <li >
+                                        <label>
+                                            Smoking/tobacco</label><span ></span></li>
+                                    <li >
+                                        <label>
+                                            Sum Assured
+                                        </label>
+                                    </li>
+                                    <li >
+                                        <label>
+                                            Amount Invested</label>
+                                        <span><i class="fa fa-inr"  aria-hidden="true"></i> 5,000</span>
+                                    </li>
+                                    <li >
+                                        <label>
+                                            Maturity Value @ 8%</label>
+                                        <span><i class="fa fa-inr" aria-hidden="true"></i> 23,57,758</span>
+                                    </li>
+                                    <li >
+                                        <label >Maturity Value @ 14.72 %</label>
+                                        <span><i class="fa fa-inr" aria-hidden="true"></i> 55,02,015</span>
+                                    </li>
+                                    <li>
+                                        <label> Cost of product</label><span id="lblProductCost">1.7 %</span></li>
+                                </ul>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <span style="font-size: 18px"> <strong>Click here to</strong></span>
+                                    <a href="one-step-checkout.html" type="submit" value="Proceed" class="d-block button-primary">Proceed </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {% include 'footer.njk' %}
+
+{% include 'dash-bottom.njk' %}
